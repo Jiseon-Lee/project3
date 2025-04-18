@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+#wrap {
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+/* header */
+#header {
+    background : url("../img/header.png") repeat-x top left;
+    height: 195px;
+    z-index: -1;
+    margin-bottom: 20px;
+}
+
+#header #top_header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 38px;
+    position: relative;
+}
+
+#top_header .left li {
+    float: left;
+    height: 38px;
+}
+
+#top_header .left li a {
+    padding: 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 38px;
+    color: #fff;
+    display: block;
+}
+
+#top_header .right ul {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+}
+
+#top_header .right ul li {
+    float: left;
+    height: 31px;
+}
+
+#top_header .right li a {
+    padding: 1px 4px 0;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 34px;
+    color: #fff;
+    display: block;
+}
+
+#header #main_header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 112px;
+    background-color: yellow;
+    position: relative;
+}
+
+#main_header .logo {
+    width: 265px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#main_header #search_bar {
+    position: absolute;
+    left: 265px;
+    top: 30px;
+    border: 2px solid #0080ff;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 516px;
+    height: 48px;
+}
+
+#main_header #search_bar #query {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    width: 430px;
+    margin: 0 0 0 17px;
+    height: 48px;
+    line-height: 48px;
+    border: 0;
+}
+
+#header #bottom_header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 42px;
+    background-color: red;
+}
+
+/* 메인 */
+section {
+    width: 1198px;
+    border: 1px solid #8d8d8d;
+    margin: 20px auto 0;
+}
+
+/* nav, slider */
+#section1 {
+    height: 421px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/*그래제본소 / 오늘의 책 / 베스트셀러*/
+#section2 {
+    width: 1200px;
+    height: 400px;
+    background-color: #fff; /**/
+    border: none;
+}
+
+/* 지금, 이 책 / 출판사 추천 */
+#section3 {
+    height: 383px; /**/
+    background-color: #fff;
+
+}
+
+/* banner */
+#banner1 {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background: url("../img/banner/bg.jpg") repeat center center;
+}
+
+#banner1 a {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 크레마샵 */
+#section4 {
+    height: 383px; /**/
+    background-color: #fff;
+}
+
+/* 예스's Pick */
+#section5 {
+    width: 1200px;
+    height: 691px;
+    background-color: #fff; /**/
+    border: none;
+}
+
+/* 내가 최근 본 상품 */
+#section6 {
+    height: 248px; /**/
+    background-color: #fff;
+}
+
+/* 예스 24 유튜브 */
+#section7 {
+    height: 500px; /**/
+    background-color: #fff;
+}
+
+/* 카드뉴스 */
+#section8 {
+    min-height: 611px;
+    background-color: #fff;
+}
+
+/* 서비스 */
+#section9 {
+    height: 240px; /**/
+    background-color: #fff;
+}
+
+/* 공지사항 */
+#section10 {
+    height: 80px;   /**/
+    border: none;
+    background-color: #fff;/**/
+}
+
+/* 카드 광고 */
+#section11 {
+    height: 80px;/**/
+    background-color: #fff;/**/
+}
+
+footer {
+    margin-top: 20px;
+    min-width: 1200px;
+    min-height: 304px;
+    border-top: 1px solid #cbcbcb;
+    background-color: #dfdfdf;
+}
