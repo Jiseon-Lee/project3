@@ -94,6 +94,14 @@
     border: 0;
 }
 
+#main_header #search_bar #search_btn {
+    width: 60px;
+    height: 48px;
+    border: 0;
+    vertical-align: top;
+    background: url("../img/gnbN4.png") no-repeat 0 0;
+}
+
 #header #bottom_header {
     width: 1200px;
     margin: 0 auto;
