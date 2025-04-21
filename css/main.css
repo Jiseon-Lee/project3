@@ -56,11 +56,14 @@
     display: block;
 }
 
+#top_header .right .myPageSub {
+    display: none;
+}
+
 #header #main_header {
     width: 1200px;
     margin: 0 auto;
     height: 112px;
-    background-color: yellow;
     position: relative;
 }
 
@@ -106,7 +109,90 @@
     width: 1200px;
     margin: 0 auto;
     height: 42px;
-    background-color: red;
+    position: relative;
+}
+
+#bottom_header #qCateZone {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bottom_header #qCateZone a {
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    padding-left: 1px;
+    width: 110px;
+    height: 43px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #0080ff;
+}
+
+#bottom_header #qCate {
+    display: none;
+}
+
+#bottom_header .bh_left {
+    position: absolute;
+    left: 116px;
+    top: 1px;
+    height: 42px;
+}
+
+#bottom_header .bh_left ul {
+    float: left;
+}
+
+#bottom_header .bh_left ul li {
+    float: left;
+    height: 42px;
+}
+
+#bottom_header .bh_left ul li a {
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    padding: 0 6px;
+    height: 42px;
+    line-height: 42px;
+}
+
+#bottom_header .bh_left .bh_left_fst li a {
+    color: #0080ff;
+}
+
+#bottom_header .bh_left .bh_left_scd li a {
+    color: #000;
+}
+
+#bottom_header .bh_right {
+    position: absolute;
+    right: 0;
+    top: 1px;
+}
+
+#bottom_header .bh_right ul li {
+    float: left;
+}
+
+#bottom_header .bh_right ul li a {
+    font-size: 13px;
+    display: block;
+    padding: 0 0 0 12px;
+    height: 42px;
+    line-height: 42px;
+    color: #666;
+}
+
+.divi {
+    margin: 16px 6px 0 4px;
+    float: left;
+    width: 1px;
+    height: 10px;
+    border-right: 1px solid #ccc;
 }
 
 /* 메인 */
@@ -123,20 +209,525 @@ section {
     background-color: #fff;
 }
 
+#section1 #mCate {
+    width: 109px;
+    position: relative;
+    padding: 9px 0 0 0;
+    height: 412px;
+}
+
+#section1 #mCate li > a {
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    padding-left: 13px;
+    color: #000;
+    font-size: 14px;
+}
+
+#section1 #mCate li.on > a {
+    color: #fff;
+    background-color: #0080FF;
+}
+
+#section1 #mCate li > .mSub {
+    display: none;
+    position: absolute;
+    left: 109px;
+    top: 0px;
+    height: 421px;
+    width: 1089px;
+    overflow: hidden;
+}
+
+#section1 #mCate li.on > .mSub {
+    display: block;
+}
+
+#section1 #mCate li .mSub .mBanner {
+    display:block;
+}
+
+#section1 #mCate li .mSub > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/banner/000/bn1.jpg");
+    background-position: center center;
+}
+
+#section1 #mCate li .mSub .mBanner img {
+    width: auto;
+    height: 421px;
+    display: none;
+}
+#section1 #mCate li .mSub .mBanner a.on img {
+    display: inline-block;
+}
+
+#section1 #mCate .mSub .mBannerPaging {
+    position: absolute;
+    top: 381px;
+    display: flex;
+    width: 100%;
+}
+
+#section1 #mCate .mSub .mBannerPaging a {
+    text-align: center;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    background-color: #f8f8f8;
+    padding: 0 4px;
+    color: #666;
+}
+
+#section1 #mCate .mSub .mBannerPaging a.on {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
 /*그래제본소 / 오늘의 책 / 베스트셀러*/
 #section2 {
     width: 1200px;
-    height: 400px;
-    background-color: #fff; /**/
+    height: 389px;
     border: none;
+    position: relative;
 }
+
+#section2 #bindFund {
+    width: 238px;
+    height: 100%;
+    text-align: center;
+    float: left;
+    border: 1px solid #d8d8d8;
+    background-color: #fff;
+}
+
+#section2 #bindFund .funding {
+    height: 268px;
+}
+
+#section2 #bindFund .funding h2 {
+    height: 52px;
+    line-height: 52px;
+    padding-left: 19px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+#section2 #bindFund .funding h2 a {
+    color: #333;
+}
+
+#section2 #bindFund .funding .fundingContent {
+    margin: 0 19px;
+}
+
+#section2 #bindFund .funding .fundingContent img {
+    width: 100%;
+    height: 153px;
+}
+
+#section2 #bindFund .funding .fundingContent p {
+    margin-top: 12px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+#section2 #bindFund .ad a {
+    display:block;
+    padding: 10px 0;
+}
+
+#section2 #bindFund .ad img {
+    width: 188px;
+}
+
+#section2 #todayBook {
+    width: 720px;
+    height: 389px;
+    position: relative;
+    float: left;
+}
+
+#todayBook h2 {
+    position: absolute;
+    left: 295px;
+}
+
+#todayBook h2 a {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#todayBookList {
+    padding: 287px 0 0 295px;
+}
+
+#todayBookList .tbUnit {
+    margin-right: 16px;
+    display: inline-block;
+}
+
+#todayBookList .tbUnit .tbThumb {
+    border: 1px solid #d8d8d8;
+}
+
+#todayBookList .tbUnit.on .tbThumb {
+    border: 4px solid #0080FF;
+}
+
+#todayBookList .tbUnit .tbThumb img {
+    width: 60px;
+    max-height: 90px;
+}
+
+#todayBookList .tbUnit .tbCont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 338px;
+    display: none;
+}
+
+#todayBookList .tbUnit.on .tbCont {
+    display: block;
+}
+
+#todayBookList .tbUnit .tbCont .tbContImg {
+    position: absolute;
+    left: 40px;
+    top: 0;
+}
+
+#todayBookList .tbUnit .tbCont .tbContImg img {
+    width: 225px;
+    max-height: 338px;
+}
+
+#todayBookList .tbUnit .tbCont .tbContInfo {
+    padding: 40px 0 0 295px;
+}
+
+#todayBookList .tbUnit .tbCont .tbContInfo .tbContInfoTitle {
+    width: 385px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 16px;
+}
+
+#todayBookList .tbUnit .tbCont .tbContInfo .tbContInfoTitle a {
+    color: #6699cc;
+}
+
+#todayBookList .tbUnit .tbCont .tbContInfo .tbContInfoCon {
+    margin-top: 7px;
+    width: 380px;
+    max-height: 110px;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+#todayBookList .tbUnit .tbCont .tbContInfo .tbContInfoCon a {
+    color: #999;
+}
+
+#todayBookList .tbUnit .tbCont .tbContInfo .tbContInfoName {
+    width: 385px;
+    height: 19px;
+    line-height: 19px;
+    font-size: 14px;
+    margin-top: 16px;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+#todayBookList .tbUnit .tbCont .tbContInfo .tbContInfoName a {
+    color: #333;
+}
+
+#todayBookList .tbUnit .tbCont .tbContInfo .tbContInfoPub {
+    width: 385px;
+    margin-top: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #999;
+}
+
+#todayBookList .tbUnit .tbCont .tbContInfo .tbContInfoPrice {
+    padding-top: 16px;
+    width: 300px;
+    color: #333;
+}
+
+#todayBookList .tbContInfo .tbContInfoPrice .price {
+    margin-right: 5px;
+}
+
+#todayBookList .tbContInfo .tbContInfoPrice .price strong {
+    font-size: 16px;
+    vertical-align: -1px;
+}
+
+#section2 #bestSellKeyBook {
+    width: 240px;
+    height: 389px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#bestSellKeyBook > div {
+    float: left;
+    width: 50%;
+    height: 30px;
+    background-color: #fff;
+}
+
+#bestSellKeyBook h2 {
+    display: block;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    border: solid 1px #d8d8d8;
+    color: #999;
+}
+
+#bestSellKeyBook .bestSeller h2 {
+    border-right: none;
+}
+
+#bestSellKeyBook .on h2 {
+    border-bottom-color: #fff;
+    color: #333;
+}
+
+#bestSellKeyBook .bestSeller .bestSellerBox {
+    padding-top: 15px;
+    height: 343px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-top: none;
+    width: 238px;
+}
+
+#bestSellKeyBook .bestSeller .bestSellerBox .bestSelectbox {
+    margin: 0 15px;
+    padding-bottom: 14px;
+}
+
+
+#bestSellKeyBook .bestSelectbox select {
+    padding-left: 10px;
+    width: 100%;
+    height: 22px;
+    font-size: 12px;
+    color: #333;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+#bestSellKeyBook .bestList {
+    position: relative;
+}
+
+#bestSellKeyBook .bestList h3 {
+    float: left;
+    margin-left: 15px;
+}
+
+#bestSellKeyBook .bestList h3 span {
+    font-size: 11px;
+    color: #999;
+    font-weight: bold;
+}
+
+#bestSellKeyBook .bestList h3 span.on {
+    color: #333;
+}
+
+#bestSellKeyBook .bestOl {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 24px;
+}
+
+#bestSellKeyBook .bestOl li {
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+#bestSellKeyBook .bestOl li .icon {
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    z-index: 1;
+    width: 13px;
+    height: 15px;
+    overflow: hidden;
+    background: url("../img/welcomeN4.png") no-repeat -160px -20px;
+}
+
+#bestSellKeyBook .bestOl li .icon.rnk_2 {
+    background-position: -175px -20px;
+}
+#bestSellKeyBook .bestOl li .icon.rnk_3 {
+    background-position: -190px -20px;
+}
+#bestSellKeyBook .bestOl li .icon.rnk_4 {
+    background-position: -205px -20px;
+}
+#bestSellKeyBook .bestOl li .icon.rnk_5 {
+    background-position: -220px -20px;
+}
+#bestSellKeyBook .bestOl li .icon.rnk_6 {
+    background-position: -235px -20px;
+}
+#bestSellKeyBook .bestOl li .icon.rnk_7 {
+    background-position: -250px -20px;
+}
+#bestSellKeyBook .bestOl li .icon.rnk_8 {
+    background-position: -265px -20px;
+}
+#bestSellKeyBook .bestOl li .icon.rnk_9 {
+    background-position: -280px -20px;
+}
+#bestSellKeyBook .bestOl li .icon.rnk_10 {
+    background-position: -295px -20px;
+}
+
+#bestSellKeyBook .bestOl li .rnk_img {
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    left: 27px;
+    top: 0;
+    display: block;
+    border: 1px solid #d8d8d8;
+    overflow: hidden;
+}
+
+#bestSellKeyBook .bestOl li .rnk_img img {
+    width: 45px;
+    margin: -1px;
+    vertical-align: top;
+}
+
+#bestSellKeyBook .bestOl li .rnk_info {
+    padding-left: 81px;
+    display: block;
+}
+
+#bestSellKeyBook .bestOl li .rnk_info strong {
+    min-height: 16px;
+    height: auto;
+    max-height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    text-overflow: clip;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#bestSellKeyBook .bestOl li .rnk_info em {
+    margin-top: 2px;
+    display: block;
+    height: 15px;
+    overflow: hidden;
+    white-space: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+    font-size: 11px;
+}
+
 
 /* 지금, 이 책 / 출판사 추천 */
 #section3 {
     height: 383px; /**/
-    background-color: #fff;
-
 }
+
+#section3 #nowBook {
+    width: 959px;
+    height: 363px;
+    padding: 10px 0;
+    position: relative;
+    float: left;
+    background-color: #fff;
+}
+
+#section3 #nowBook h2 {
+    position: absolute;
+    left: 29px;
+    top: 20px;
+}
+
+#section3 #nowBook h2 a {
+    display: block;
+    height: 34px;
+    overflow: hidden;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#section3 #nowBook #nowBookSet {
+    padding: 54px 0 0 70px;
+}
+
+#section3 #nowBook #nowBookSet ul {
+    display: table;
+    table-layout: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+#section3 #pubRecBook {
+    width: 238px;
+    height: 356px;
+    position: relative;
+    float:right;
+    padding-top: 27px;
+    background-color: #ecf5fe;
+}
+
+
 
 /* banner */
 #banner1 {
