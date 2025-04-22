@@ -1,0 +1,85 @@
+[{
+    "code" : "000",
+    "name" : "YES NOW",
+    "banner" : [
+        {
+            "title" : "4월의 굿즈 : 북 파우치 & 포켓 스탠드",
+            "img" : "img/section1/bn1-1"
+        },
+        {
+            "title" : "예스24 창립 26주년",
+            "img" : "img/section1/bn1-2"
+        },
+        {
+            "title" : "세계 책의 날",
+            "img" : "img/section1/bn1-3"
+        },
+        {
+            "title" : "신나는 어린이날",
+            "img" : "img/section1/bn1-4"
+        },
+        {
+            "title" : "신간 소개",
+            "img" : "img/section1/bn1-5"
+        }
+    ]
+},{
+    "code" : "001",
+    "name" : "국내도서",
+    "banner" : [
+        {
+            "title" : "방구석 미술관 3",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "자연식물식",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "MD 추천",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "HOT! 이벤트",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "화제의 책",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "이주의 책",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "이책 어때?",
+            "img" : "img/section1/bn2-1"
+        }
+    ]
+},
+{
+    "code" : "001",
+    "name" : "국내도서",
+    "banner" : [
+        {
+            "title" : "",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "",
+            "img" : "img/section1/bn2-1"
+        },
+        {
+            "title" : "",
+            "img" : "img/section1/bn2-1"
+        }
+    ]
+}]

@@ -7,7 +7,7 @@
 
 /* header */
 #header {
-    background : url("../img/header.png") repeat-x top left;
+    background: url("../img/header/header.png") repeat-x top left;
     height: 195px;
     z-index: -1;
     margin-bottom: 20px;
@@ -44,20 +44,43 @@
 #top_header .right ul li {
     float: left;
     height: 31px;
+    position: relative;
 }
 
 #top_header .right li a {
     padding: 1px 4px 0;
     font-size: 11px;
-    font-weight: bold;
     letter-spacing: -1px;
     line-height: 34px;
     color: #fff;
     display: block;
 }
 
-#top_header .right .myPageSub {
+#top_header .right #myPageSub {
     display: none;
+    position: absolute;
+    left: -3px;
+    right: -3px;
+    top: 0;
+    border: 1px solid #196ab3;
+    background-color: #fff;
+    padding: 5px 0;
+    z-index: 1;
+}
+
+#top_header .right #myPageSub li {
+    height: 20px;
+    width: 100%;
+}
+
+#top_header .right #myPageSub li a{
+    float: none;
+    display: block;
+    padding: 0 0 0 7px;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    white-space: nowrap;
 }
 
 #header #main_header {
@@ -195,10 +218,27 @@
     border-right: 1px solid #ccc;
 }
 
+.icon_down {
+    display: inline-block;
+    overflow: hidden;
+    width: 10px;
+    height: 10px;
+    background: url("../img/header/dropdown.png") no-repeat center;
+}
+
+.icon_up {
+    display: inline-block;
+    overflow: hidden;
+    width: 10px;
+    height: 10px;
+    background: url("../img/header/dropup.png") no-repeat center;
+}
+
+
 /* 메인 */
 section {
     width: 1198px;
-    border: 1px solid #8d8d8d;
+    border: 1px solid #d8d8d8;
     margin: 20px auto 0;
 }
 
@@ -216,7 +256,7 @@ section {
     height: 412px;
 }
 
-#section1 #mCate li > a {
+#section1 #mCate li>a {
     height: 40px;
     line-height: 40px;
     display: block;
@@ -225,12 +265,12 @@ section {
     font-size: 14px;
 }
 
-#section1 #mCate li.on > a {
+#section1 #mCate li.on>a {
     color: #fff;
     background-color: #0080FF;
 }
 
-#section1 #mCate li > .mSub {
+#section1 #mCate li>.mSub {
     display: none;
     position: absolute;
     left: 109px;
@@ -240,19 +280,19 @@ section {
     overflow: hidden;
 }
 
-#section1 #mCate li.on > .mSub {
+#section1 #mCate li.on>.mSub {
     display: block;
 }
 
 #section1 #mCate li .mSub .mBanner {
-    display:block;
+    display: block;
 }
 
-#section1 #mCate li .mSub > a {
+#section1 #mCate li .mSub>a {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("../img/banner/000/bn1.jpg");
+    background-image: url("../img/section1/bn1-1.jpg");
     background-position: center center;
 }
 
@@ -261,6 +301,7 @@ section {
     height: 421px;
     display: none;
 }
+
 #section1 #mCate li .mSub .mBanner a.on img {
     display: inline-block;
 }
@@ -311,6 +352,7 @@ section {
 
 #section2 #bindFund .funding {
     height: 268px;
+    border-bottom: 1px solid #d8d8d8;
 }
 
 #section2 #bindFund .funding h2 {
@@ -347,7 +389,7 @@ section {
 }
 
 #section2 #bindFund .ad a {
-    display:block;
+    display: block;
     padding: 10px 0;
 }
 
@@ -442,6 +484,15 @@ section {
     max-height: 110px;
     line-height: 22px;
     font-size: 14px;
+    text-align: justify;
+    color: #999;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-break: keep-all;
 }
 
 #todayBookList .tbUnit .tbCont .tbContInfo .tbContInfoCon a {
@@ -495,7 +546,7 @@ section {
     right: 0;
 }
 
-#bestSellKeyBook > div {
+#bestSellKeyBook>div {
     float: left;
     width: 50%;
     height: 30px;
@@ -596,27 +647,35 @@ section {
 #bestSellKeyBook .bestOl li .icon.rnk_2 {
     background-position: -175px -20px;
 }
+
 #bestSellKeyBook .bestOl li .icon.rnk_3 {
     background-position: -190px -20px;
 }
+
 #bestSellKeyBook .bestOl li .icon.rnk_4 {
     background-position: -205px -20px;
 }
+
 #bestSellKeyBook .bestOl li .icon.rnk_5 {
     background-position: -220px -20px;
 }
+
 #bestSellKeyBook .bestOl li .icon.rnk_6 {
     background-position: -235px -20px;
 }
+
 #bestSellKeyBook .bestOl li .icon.rnk_7 {
     background-position: -250px -20px;
 }
+
 #bestSellKeyBook .bestOl li .icon.rnk_8 {
     background-position: -265px -20px;
 }
+
 #bestSellKeyBook .bestOl li .icon.rnk_9 {
     background-position: -280px -20px;
 }
+
 #bestSellKeyBook .bestOl li .icon.rnk_10 {
     background-position: -295px -20px;
 }
@@ -672,7 +731,8 @@ section {
 
 /* 지금, 이 책 / 출판사 추천 */
 #section3 {
-    height: 383px; /**/
+    height: 383px;
+    /**/
 }
 
 #section3 #nowBook {
@@ -700,41 +760,132 @@ section {
     color: #333;
 }
 
-#section3 #nowBook #nowBookSet {
+#section3 #nowBook .nowBookSet {
     padding: 54px 0 0 70px;
+    background-color: yellow;
 }
 
-#section3 #nowBook #nowBookSet ul {
+#section3 #nowBook .nowBookSet ul {
     display: table;
     table-layout: fixed;
+
 }
 
+#section3 #nowBook .nowBookSet ul li {
+    display: table-cell;
+    width: 218px;
+}
 
+#section3 #nowBook .nowBookSet .nowBookImg {
+    padding-left: 20px;
+    width: 158px;
+    height: 179px;
+    vertical-align: bottom;
+}
 
+#section3 #nowBook .nowBookSet .nowBookImg a {
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+}
 
+#section3 #nowBook .nowBookSet .nowBookImg a img {
+    margin: -1px;
+    width: 125px;
+    max-height: 179px;
+}
 
+#section3 #nowBook .nowBookSet .nowBookInfo {
+    margin: 16px 0 0 20px;
+}
 
+#section3 #nowBook .nowBookSet .nowBookInfo .nowBookCmt {
+    width: 180px;
+    height: 16px;
+    overflow: hidden;
+    color: #6699cc;
+    text-overflow: ellipsis;
+    line-height: 16px;
+}
 
+#section3 #nowBook .nowBookSet .nowBookInfo .nowBookName {
+    width: 180px;
+    margin-top: 4px;
+    min-height: 16px;
+    max-height: 32px;
+    overflow: hidden;
+    word-break: break-all;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: bold
+}
 
+#section3 #nowBook .nowBookSet .nowBookInfo .nowBookName a {
+    color: #333;
+}
 
+#section3 #nowBook .nowBookSet .nowBookInfo .nowBookPub {
+    width: 180px;
+    margin-top: 6px;
+    height: 15px;
+    line-height: 15px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#section3 #nowBook .nowBookSet .nowBookInfo .nowBookPrice {
+    margin-top: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+#section3 #nowBook .nowBookSet .nowBookInfo .nowBookPrice span {
+    font-size: 14px;
+    vertical-align: -1px;
+}
 
 #section3 #pubRecBook {
     width: 238px;
     height: 356px;
     position: relative;
-    float:right;
+    float: right;
     padding-top: 27px;
     background-color: #ecf5fe;
 }
 
+#section3 #pubRecBook h2 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
 
+#section3 #pubRecBook ul {
+    margin: 0 15px;
+}
+
+#section3 #pubRecBook ul li {
+    text-align: center;
+    height: 100px;
+    padding: 30px 0;
+}
+
+#section3 #pubRecBook ul li:first-child {
+    padding: 43px 0 30px 0;
+    border-bottom: 1px solid #d5e4f3;
+}
 
 /* banner */
 #banner1 {
     width: 100%;
     height: 200px;
     margin-top: 20px;
-    background: url("../img/banner/bg.jpg") repeat center center;
+    background: url("../img/bg.jpg") repeat center center;
 }
 
 #banner1 a {
@@ -746,54 +897,1020 @@ section {
 
 /* 크레마샵 */
 #section4 {
-    height: 383px; /**/
+    height: 369px;
     background-color: #fff;
+}
+
+#section4 #cremaShop {
+    width: 959px;
+    height: 347px;
+    padding: 10px 0;
+    position: relative;
+    float: left;
+    background-color: #fff;
+}
+
+#section4 #cremaShop h2 {
+    position: absolute;
+    left: 29px;
+    top: 20px;
+}
+
+#section4 #cremaShop h2 a {
+    display: block;
+    height: 34px;
+    overflow: hidden;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#section4 #cremaShop .cremaShopSet {
+    padding: 54px 0 0 70px;
+    background-color: yellow;
+}
+
+#section4 #cremaShop .cremaShopSet ul {
+    display: table;
+    table-layout: fixed;
+
+}
+
+#section4 #cremaShop .cremaShopSet ul li {
+    display: table-cell;
+    width: 218px;
+}
+
+#section4 #cremaShop .cremaShopSet .cremaShopImg {
+    padding-left: 20px;
+    width: 158px;
+    height: 179px;
+    vertical-align: bottom;
+}
+
+#section4 #cremaShop .cremaShopSet .cremaShopImg a {
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+}
+
+#section4 #cremaShop .cremaShopSet .cremaShopImg a img {
+    margin: -1px;
+    width: 125px;
+    max-height: 179px;
+}
+
+#section4 #cremaShop .cremaShopSet .cremaShopInfo {
+    margin: 16px 0 0 20px;
+}
+
+#section4 #cremaShop .cremaShopSet .cremaShopInfo .cremaShopName {
+    width: 180px;
+    margin-top: 4px;
+    min-height: 16px;
+    max-height: 32px;
+    overflow: hidden;
+    word-break: break-all;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: bold
+}
+
+#section4 #cremaShop .cremaShopSet .cremaShopInfo .cremaShopName a {
+    color: #333;
+}
+
+#section4 #cremaShop .cremaShopSet .cremaShopInfo .cremaShopPub {
+    width: 180px;
+    margin-top: 6px;
+    height: 15px;
+    line-height: 15px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#section4 #cremaShop .cremaShopSet .cremaShopInfo .cremaShopPrice {
+    margin-top: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+#section4 #cremaShop .cremaShopSet .cremaShopInfo .cremaShopPrice span {
+    font-size: 14px;
+    vertical-align: -1px;
+}
+
+#section4 #cremaAd {
+    width: 238px;
+    height: 369px;
+    float: right;
+}
+
+#section4 #cremaAd img {
+    width: 238px;
+    height: 369px;
 }
 
 /* 예스's Pick */
 #section5 {
     width: 1200px;
     height: 691px;
-    background-color: #fff; /**/
+    background-color: #fff;
+    /**/
     border: none;
+    position: relative;
 }
+
+#section5 .multiSectionArea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1198px;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+
+#section5 .multiSectionArea .multiSection {
+    flex: 1;
+    height: 62px;
+}
+
+#section5 .multiSectionArea .multiSection h2 {
+    background-color: #f8f8f8;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    border-right: none;
+}
+
+#section5 .multiSectionArea .multiSection:first-child h2 {
+    border-left: none;
+}
+
+#section5 .multiSectionArea .multiSection.on h2 {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+#section5 .multiSectionArea .multiSection .multiSecCont {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 1198px;
+    height: 627px;
+    border: 1px solid #d8d8d8;
+    border-top: none;
+    display: none;
+    background: url("../img/section5/bg.gif") no-repeat left top;
+}
+
+#section5 .multiSectionArea .multiSection.on .multiSecCont {
+    display: block;
+}
+
+#section5 .multiSectionArea .multiSection .multiSecCont .multiTop {
+    position: relative;
+    height: 428px;
+    overflow: hidden;
+}
+
+#section5 .multiSectionArea .multiTop h3 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    height: 34px;
+    overflow: hidden;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#section5 .multiSectionArea .multiTop .multiTitle {
+    padding-top: 26px;
+    height: 44px;
+    text-align: center;
+}
+
+#section5 .multiSectionArea .multiTitle li {
+    color: #999;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+#section5 .multiSectionArea .multiTitle li.on {
+    color: #333;
+    font-weight: bold;
+}
+
+#section5 .multiSectionArea .multiCont ul {
+    padding-left: 55px;
+}
+
+#section5 .multiSectionArea .multiCont ul li {
+    width: 362px;
+    float: left;
+    text-align: center;
+}
+
+#section5 .multiSectionArea .multiCont .multiBookImg {
+    display: inline-block;
+}
+
+#section5 .multiSectionArea .multiCont .multiBookImg img {
+    margin: -1px;
+    max-width: 290px;
+    height: 250px;
+}
+
+#section5 .multiSectionArea .multiCont .multiBookInfo {
+    margin-top: 14px;
+
+}
+
+#section5 .multiSectionArea .multiCont .multiBookInfo .multiBookCmt {
+    margin: 0 auto;
+    width: 250px;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #6699cc;
+    text-overflow: ellipsis;
+}
+
+#section5 .multiSectionArea .multiCont .multiBookInfo .multiBookName {
+    margin: 4px auto;
+    width: 250px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#section5 .multiSectionArea .multiCont .multiBookInfo .multiBookName a {
+    color: #333;
+    font-weight: bold;
+}
+
+#section5 .multiSectionArea .multiCont .multiBookInfo .multiBookPub {
+    margin: 3px auto 0;
+    width: 250px;
+    height: 16px;
+    overflow: hidden;
+    line-height: 16px;
+    color: #999;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#section5 .multiSectionArea .multiCont .multiBookInfo .multiBookPrice {
+    margin-top: 3px;
+    line-height: 16px;
+    color: #333;
+}
+
+#section5 .multiSectionArea .multiCont .multiBookInfo .multiBookPrice span {
+    font-size: 15px;
+    font-weight: 500;
+    vertical-align: -1px;
+}
+
+#section5 .multiSectionArea .multiSection .multiSecCont .multiBtm {
+    position: relative;
+    height: 198px;
+}
+
+#section5 .multiSectionArea .multiBtm .bookCornerTit {
+    position: absolute;
+    top: 3px;
+    left: 21px;
+    width: 320px;
+    height: 138px;
+    padding: 36px 5px 0 18px;
+}
+
+#section5 .multiSectionArea .multiBtm .bookCornerTit h4 {
+    max-height: 44px;
+    line-height: 16px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#section5 .multiSectionArea .multiBtm .bookCornerTit h4 a {
+    color: #333;
+}
+
+#section5 .multiSectionArea .multiBtm .bookCornerTit p {
+    margin-top: 16px;
+    max-height: 80px;
+    line-height: 20px;
+    font-size: 13px;
+    overflow: hidden;
+    color: #999;
+}
+
+#section5 .multiSectionArea .multiBtm .bookCornerTit p a {
+    color: #999;
+}
+
+#section5 .multiSectionArea .multiBtm .bookCornerCon {
+    position: absolute;
+    top: 30px;
+    left: 428px;
+}
+
+#section5 .multiSectionArea .multiBtm .bookCornerCon li {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 186px;
+}
+
+#section5 .multiSectionArea .bookCornerCon .book_img {
+    width: 140px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#section5 .multiSectionArea .bookCornerCon .book_img a {
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+}
+
+#section5 .multiSectionArea .bookCornerCon .book_img a img {
+    max-width: 140px;
+    height: 120px;
+    margin: -1px;
+}
+
+#section5 .multiSectionArea .bookCornerCon .book_info {
+    margin-top: 8px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+#section5 .multiSectionArea .bookCornerCon .book_info .book_name {
+    width: 140px;
+    height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    overflow: hidden;
+    line-height: 16px;
+}
+
+#section5 .multiSectionArea .bookCornerCon .book_info .book_name a {
+    color: #333;
+}
+
+
+
 
 /* 내가 최근 본 상품 */
 #section6 {
-    height: 248px; /**/
+    height: 248px;
+    /**/
     background-color: #fff;
 }
 
+
+
 /* 예스 24 유튜브 */
 #section7 {
-    height: 500px; /**/
+    height: 500px;
     background-color: #fff;
 }
+
+.yesTvTit {
+    margin: 0 29px;
+    padding: 10px 0 21px 0;
+}
+
+.yesTvTit a {
+    color: #333;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 34px;
+}
+
+.yesTvTit a .arrow {
+    position: absolute;
+    top: 19px;
+    left: 133px;
+    font-size: 12px;
+}
+
+.yesTvGrp {
+    position: relative;
+    margin-left: 30px;
+}
+
+.TvArea {
+    width: 640px;
+    height: 360px;
+    display: none;
+}
+
+.TvArea.on {
+    display: block;
+}
+
+.TvArea iframe {
+    display: block;
+}
+
+.TvArea h3 {
+    display: block;
+    margin-top: 16px;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+}
+
+.TvSub {
+    position: absolute;
+    top: -2px;
+    left: 670px;
+}
+
+.TvSub .TvSubTit {
+    height: 17px;
+    line-height: 17px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+}
+
+.TvSub .TvSubGrp {
+    width: 136px;
+    height: 200px;
+    margin-top: 15px;
+    line-height: normal;
+    display: none;
+}
+
+.TvSub .TvSubGrp.on {
+    display: block;
+}
+
+
+.TvSub .TvSubGrp .imgbox {
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+    float: left;
+}
+
+.TvSub .TvSubGrp .imgbox img {
+    width: 138px;
+    margin: -1px;
+    max-height: 204px;
+}
+
+.TvSubExp {
+    position: absolute;
+    top: 33px;
+    left: 150px;
+    width: 328px;
+}
+
+.TvSubGrp .subCmt {
+    display: block;
+    margin: 0 auto;
+    min-height: 17px;
+    max-height: 34px;
+    line-height: 17px;
+    font-size: 12px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #6699cc;
+}
+
+.TvSubGrp .subTit {
+    display: block;
+    margin: 14px auto 0;
+    min-height: 17px;
+    max-height: 34px;
+    line-height: 17px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.TvSubGrp .subTit a {
+    color: #333;
+    font-weight: bold;
+}
+
+.TvSubGrp .subTit a:hover {
+    text-decoration: underline;
+}
+
+.TvSubGrp .subPub {
+    display: block;
+    margin: 6px 0 0 0;
+}
+
+.TvSubGrp .subPub .auth {
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    line-height: 16px;
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.TvSubGrp .subPub .pub {
+    display: block;
+    margin: 3px 0 0 0;
+    height: 16px;
+    overflow: hidden;
+    line-height: 16px;
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.movGrp {
+    position: absolute;
+    bottom: 0;
+    left: 670px;
+    max-width: 498px;
+    max-height: 76px;
+}
+
+.movGrp .TvThumb {
+    width: 134px;
+    height: 76px;
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+}
+
+.movGrp .TvThumb img {
+    width: 136px;
+    margin: -1px;
+}
+
+.movGrp .TvThumb.hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid #196ab3;
+    z-index: 1;
+}
+
+.movGrp .TvThumb::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -16px 0 0 -16px;
+    width: 32px;
+    height: 32px;
+    background: url(../img/section7/play.png) no-repeat left top;
+}
+
+.movGrp .TvThumb:hover::after {
+    opacity: 0;
+}
+
+#main7 .btnTv,
+.cardRight .btnCR {
+    top: 50%;
+    margin-top: -19px;
+}
+
 
 /* 카드뉴스 */
 #section8 {
     min-height: 611px;
     background-color: #fff;
+    display: table;
+}
+
+#section8 #cardNews {
+    width: 418px;
+    position: relative;
+    display: table-cell;
+    min-height: 591px;
+    border-right: solid 1px #d8d8d8;
+    vertical-align: top;
+}
+
+#cardNews #cardNewsTop {
+    padding-top: 20px;
+    height: 203px;
+}
+
+#cardNews #cardNewsTop h2 {
+    padding-left: 29px;
+    height: 44px;
+    overflow: hidden;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#cardNews #cardNewsTop #cardNewsBook {
+    margin: 0 30px;
+    height: 140px;
+    position: relative;
+}
+
+#cardNews #cardNewsTop #cardNewsBook .book_img {
+    height: 138px;
+    float: left;
+    border: 1px solid #ececec;
+}
+
+#cardNews #cardNewsTop #cardNewsBook .book_img img {
+    margin: -1px;
+    width: 98px;
+    height: 140px;
+}
+
+#cardNews #cardNewsTop #cardNewsBook .book_title {
+    position: absolute;
+    left: 112px;
+    top: 0;
+    width: 230px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+#cardNews #cardNewsTop #cardNewsBook .book_info {
+    position: absolute;
+    left: 112px;
+    bottom: 0;
+    width: 230px;
+}
+
+#cardNews #cardNewsTop #cardNewsBook .book_info .name {
+    margin-top: 4px;
+    width: 230px;
+    min-height: 16px;
+    max-height: 32px;
+    overflow: hidden;
+    word-break: break-all;
+    line-height: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#cardNews #cardNewsTop #cardNewsBook .book_info .pub {
+    margin-top: 5px;
+    width: 230px;
+    height: 15px;
+    line-height: 15px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#cardNews #cardNewsBtm {
+    position: absolute;
+    left: 30px;
+    top: 223px;
+    width: 358px;
+    height: 358px;
+}
+
+#cardNews #cardNewsBtm img {
+    width: 358px;
+    height: 358px;
+}
+
+#section8 #yesNews {
+    display: table-cell;
+}
+
+#section8 #yesNews .yesNewsRow {
+    padding: 20px 0 20px 29px;
+    min-height: 265px;
+    position: relative;
+}
+
+#section8 #yesNews .yesNewsRow:first-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+#yesNews .yesNewsRow h2 {
+    position: relative;
+    z-index: 11;
+    display: block;
+    height: 44px;
+}
+
+#yesNews .yesNewsRow h2 a {
+    height: 34px;
+    overflow: hidden;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#yesNews .yesNewsRow li {
+    width: 220px;
+    float: left;
+    margin-right: 20px;
+    height: 191px;
+}
+
+#yesNews .yesNewsRow li a {
+    display: inline-block;
+    margin-left: 40px;
+    width: 160px;
+    height: 180px;
+    overflow: hidden;
+}
+
+#yesNews .yesNewsRow li a .chYesThumb {
+    width: 160px;
+    height: 113px;
+}
+
+#yesNews .yesNewsRow li a .chYesInfo {
+    padding-top: 8px;
+    height: 45px;
+}
+
+#yesNews .yesNewsRow li a .chYesInfo .chYesInfoTitle {
+    min-height: 16px;
+    max-height: 32px;
+    overflow: hidden;
+    line-height: 16px;
+    font-size: 12px;
+    color: #333;
+}
+
+#yesNews .yesNewsRow li a .chYesInfo .chYesInfoDesc {
+    margin-top: 5px;
+    height: 16px;
+    line-height: 16px;
+    color: #999;
+}
+
+#yesNews .yesNewsRow .yesNewsBtm {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 0;
+    background-color: #f8f8f8;
+}
+
+#yesNews .yesNewsRow .yesNewsBtm dl {
+    margin: 0 9px 0 19px;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#yesNews .yesNewsRow .yesNewsBtm dt {
+    display: inline;
+    margin-right: 29px;
+    font-weight: bold;
+    color: #333;
+}
+
+#yesNews .yesNewsRow .yesNewsBtm dd {
+    display: inline;
+}
+
+#yesNews .yesNewsRow .yesNewsBtm dd a {
+    margin-right: 20px;
+    color: #666;
 }
 
 /* 서비스 */
 #section9 {
-    height: 240px; /**/
     background-color: #fff;
+    display: table;
+}
+
+#section9 #yesServ {
+    display: table-cell;
+    margin-right: 0;
+    width: 720px;
+    height: 238px;
+    border: none;
+    float: left;
+}
+
+#section9 #yesServ h2 {
+    padding: 15px 0 0 20px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+#section9 #yesServ #yesServCont {
+    padding-left: 20px;
+
+}
+
+#yesServCont dl {
+    width: 160px;
+    margin-right: 20px;
+    float: left;
+}
+
+#yesServCont dl dt {
+    padding-bottom: 5px;
+}
+
+#yesServCont dl dt strong {
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+
+#yesServCont dl dd {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+#yesServCont dl dd a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    text-indent: 4px;
+}
+
+#yesServCont dl.servBn {
+    padding-left: 11px;
+    width: 119px;
+}
+
+.servBn dt {
+    display: none;
+    padding-bottom: 5px;
+}
+
+.servBn dd li:first-child {
+    margin-top: 0;
+}
+
+.servBn dd li {
+    margin-top: 35px;
+}
+
+.servBn dd li a {
+    margin-left: -4px;
+}
+
+#section9 #schoolColab {
+    display: table-cell;
+    width: 237px;
+    height: 238px;
+    border: none;
+    border-left: solid 1px #d8d8d8;
+    float: left;
+}
+
+#section9 #schoolColab a {
+    padding-left: 5px;
+    display: block;
+}
+
+#section9 #schoolColab a h2 {
+    padding: 15px 0 0 15px;
+    height: 49px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+#section9 #schoolColab a img {
+    width: 228px;
+    height: 164px;
+}
+
+#section9 #mustReadEvent {
+    display: table-cell;
+    width: 239px;
+    height: 238px;
+    float: right;
+    border: none;
+    border-left: 1px solid #d8d8d8;
+}
+
+#section9 #mustReadEvent li:first-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+#mustReadEvent a {
+    padding: 11px 0;
+    display: block;
+    height: 96px;
+}
+
+#mustReadEvent a img {
+    width: 188px;
+    height: 96px;
 }
 
 /* 공지사항 */
 #section10 {
-    height: 80px;   /**/
+    width: 1200px;
+    height: 34px;
     border: none;
-    background-color: #fff;/**/
+    padding: 23px 0;
+    margin: 0 auto;
+}
+
+#section10 h2 {
+    width: 90px;
+    float: left;
+    padding-left: 19px;
+    height: 34px;
+    overflow: hidden;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.notiLi {
+    margin: 0 40px 0 97px;
+}
+
+.notiLi li {
+    float: left;
+    margin-right: 25px;
+    line-height: 34px;
+}
+
+.notiLi li a {
+    font-size: 12px;
+    color: #666;
+}
+
+.notiLi li span.notDate {
+    color: #999;
 }
 
 /* 카드 광고 */
 #section11 {
-    height: 80px;/**/
-    background-color: #fff;/**/
+    height: 80px;
+    /**/
+    margin: 0 auto;
 }
+
+#section11 li {
+    float: left;
+    width: 50%;
+}
+
+#section11 li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#section11 li a img {
+    width: 479px;
+    height: 58px;
+}
+
 
 footer {
     margin-top: 20px;
@@ -801,4 +1918,300 @@ footer {
     min-height: 304px;
     border-top: 1px solid #cbcbcb;
     background-color: #dfdfdf;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    height: 42px;
+    border-bottom: solid 1px #cbcbcb;
+    background-color: #dfdfdf;
+}
+
+#footer_wrap {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 1200px;
+    text-align: left;
+}
+
+.footer_top {
+    height: 44px;
+}
+
+#menu_li {
+    float: left;
+}
+
+#menu_li li {
+    position: relative;
+    float: left;
+    height: 44px;
+}
+
+#menu_li li+li:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    height: 10px;
+    border-left: solid 1px #ccc;
+}
+
+#menu_li li:first-child a {
+    padding-left: 0;
+}
+
+#menu_li li a {
+    display: block;
+    padding: 0 8px;
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+    letter-spacing: -1px;
+    font-size: 12px;
+    color: #666;
+}
+
+#sns_li {
+    position: absolute;
+    top: 12px;
+    right: 126px;
+}
+
+#sns_li li {
+    float: left;
+    margin-right: 4px;
+}
+
+#fam_dl {
+    float: right;
+    margin-top: 9px;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    width: 120px;
+    height: 24px;
+}
+
+#fam_dl select {
+    background-color: #ececec;
+    border: 1px solid #c1c1c1;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 5px 5px 5px 8px;
+    color: #666;
+    height: 24px;
+}
+
+.footer_content {
+    position: relative;
+    z-index: 1;
+    min-height: 148px;
+}
+
+.footer_main {
+    position: absolute;
+    top: 21px;
+    left: 164px;
+    height: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #999;
+}
+
+.foot_address dd {
+    position: absolute;
+    top: 43px;
+    left: 164px;
+    width: 450px;
+    font-size: 11px;
+    color: #999;
+}
+
+.addRow {
+    display: block;
+    margin-top: 2px;
+    line-height: 16px;
+    color: #999;
+}
+
+#corpNumLink {
+    margin-left: 5px;
+    color: #666;
+    letter-spacing: -0.7px;
+}
+
+#corpNumLink:hover {
+    text-decoration: underline;
+}
+
+#corpNumLink::after {
+    content: "";
+    background: url(../img/footer/right-arrow.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+}
+
+.text_copyright {
+    margin-top: 6px;
+    color: #999;
+}
+
+.csLi {
+    position: absolute;
+    top: 17px;
+    right: 4px;
+}
+
+.csTel {
+    width: 275px;
+}
+
+.csTel dl dt {
+    font-size: 15px;
+    color: #999;
+    font-family: "Noto Sans KR";
+    font-weight: 450;
+}
+
+.csTel dl dd {
+    margin-top: 6px;
+}
+
+.csTel p {
+    margin: 0;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.csTel p:nth-child(even) {
+    margin-left: 10px;
+}
+
+.csTel p+p {
+    margin-top: 1px;
+}
+
+.csTel p .item {
+    margin-right: 3px;
+    min-width: 48px;
+    color: #666;
+    font-size: 11px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.csTel p .item.right {
+    min-width: 35px;
+}
+
+.csTel p .yes_b {
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+}
+
+.csTel a {
+    font-size: 12px;
+    color: #666;
+}
+
+.csTel a:hover {
+    text-decoration: underline;
+}
+
+.csTel a::after {
+    content: "";
+    background: url(../img/footer/right-arrow.png);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+}
+
+.csFaq {
+    margin-top: 10px;
+}
+
+.cs {
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    width: 88px;
+    height: 20px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    position: relative;
+}
+
+.faq {
+    font-size: 11px;
+    letter-spacing: -0.8px;
+    color: #666;
+    padding-left: 6px;
+    line-height: 20px;
+}
+
+.faq::after {
+    content: "";
+    background: url(../img/footer/right-arrow.png);
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.footer_glory {
+    height: 88px;
+}
+
+.footer_glory img {
+    vertical-align: top;
+    width: 1200px;
+}
+
+.footer_safe {
+    padding: 20px 0 33px 0;
+}
+
+.footer_safe dt {
+    float: left;
+    color: #333;
+    letter-spacing: -1px;
+    font-size: 12px;
+}
+
+.footer_safe img {
+    margin-top: -5px;
+}
+
+.footer_safe dd {
+    float: left;
+    padding-left: 4px;
+    font-size: 11px;
+    color: #999;
+}
+
+.footer_safe dd a {
+    margin-left: 5px;
+    letter-spacing: -1px;
+    color: #666;
+    position: relative;
+}
+
+.footer_safe dd a::after {
+    content: "";
+    background: url(../img/footer/right-arrow.png);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
 }

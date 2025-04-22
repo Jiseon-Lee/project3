@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script defer src="./js/common.js"></script>
+    <script defer src="./js/section2.js"></script>
+
 </head>
+
 <body>
     <div id="wrap">
         <!-- header -->
@@ -30,9 +36,9 @@
                     <ul>
                         <li><a href="#">로그인</a></li>
                         <li><a href="#">회원가입</a></li>
-                        <li><a href="#">마이페이지</a>
-                            <ul class="myPageSub">
-                                <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">마이페이지 <em class="icon_down"></em></a>
+                            <ul id="myPageSub">  <!-- 드롭다운 -->
+                                <li><a href="#">마이페이지 <em class="icon_up"></em></a></li>
                                 <li><a href="#">주문내역</a></li>
                                 <li><a href="#">마이리스트</a></li>
                                 <li><a href="#">YES포인트</a></li>
@@ -213,21 +219,26 @@
                                         <dt><a href="#">크레마클럽<em class="bl_arrR bgGNB">하위메뉴</em></a></dt>
                                         <dd class="qCatePos01 wide">
                                             <ul>
-                                            <li><a href="#">YES24 ORIGINAL</a></li>
-                                            <li><a href="#" class="lnk_divi">소설</a> <em class="divi">|</em> <a href="#" class="lnk_divi">에세이 시</a></li>
-                                            <li><a href="#">경제 경영</a></li>
-                                            <li><a href="#">자기계발</a></li>
-                                            <li><a href="#" class="lnk_divi">인문</a> <em class="divi">|</em> <a href="#" class="lnk_divi">사회 정치</a></li>
-                                            <li><a href="#" class="lnk_divi">역사</a> <em class="divi">|</em> <a href="#" class="lnk_divi">종교</a></li>
-                                            <li><a href="#">예술 대중문화</a></li>
-                                            <li><a href="#">자연과학</a></li>
-                                            <li><a href="#">가정 살림</a></li>
-                                            <li><a href="#">건강 취미 여행</a></li>
-                                            <li><a href="#" class="lnk_divi">어린이 유아</a> <em class="divi">|</em> <a href="#" class="lnk_divi">청소년</a></li>
-                                            <li><a href="#">국어 외국어</a></li>
-                                            <li><a href="#">IT 모바일</a></li>
-                                            <li><a href="#">대학교재</a></li>
-                                            <li><a href="#" class="lnk_divi">잡지</a> <em class="divi">|</em> <a href="#" class="lnk_divi">만화</a></li>
+                                                <li><a href="#">YES24 ORIGINAL</a></li>
+                                                <li><a href="#" class="lnk_divi">소설</a> <em class="divi">|</em> <a
+                                                        href="#" class="lnk_divi">에세이 시</a></li>
+                                                <li><a href="#">경제 경영</a></li>
+                                                <li><a href="#">자기계발</a></li>
+                                                <li><a href="#" class="lnk_divi">인문</a> <em class="divi">|</em> <a
+                                                        href="#" class="lnk_divi">사회 정치</a></li>
+                                                <li><a href="#" class="lnk_divi">역사</a> <em class="divi">|</em> <a
+                                                        href="#" class="lnk_divi">종교</a></li>
+                                                <li><a href="#">예술 대중문화</a></li>
+                                                <li><a href="#">자연과학</a></li>
+                                                <li><a href="#">가정 살림</a></li>
+                                                <li><a href="#">건강 취미 여행</a></li>
+                                                <li><a href="#" class="lnk_divi">어린이 유아</a> <em class="divi">|</em> <a
+                                                        href="#" class="lnk_divi">청소년</a></li>
+                                                <li><a href="#">국어 외국어</a></li>
+                                                <li><a href="#">IT 모바일</a></li>
+                                                <li><a href="#">대학교재</a></li>
+                                                <li><a href="#" class="lnk_divi">잡지</a> <em class="divi">|</em> <a
+                                                        href="#" class="lnk_divi">만화</a></li>
                                             </ul>
                                     </dl>
                                 </div>
@@ -377,7 +388,7 @@
         <!-- nav, slider -->
         <section id="section1">
             <ul id="mCate">
-                <li class="on" ><a>YES NOW</a>
+                <li class="on"><a>YES NOW</a>
                     <div id="mSub000" class="mSub">
                         <a class="img1 on" href="#"></a>
                         <div class="mBannerPaging">
@@ -393,8 +404,10 @@
                     <div id="mSub001" class="mSub">
                         <div class="cate">
                             <ul>
-                                <li><a href="#" style="font-weight:bold;">소설/시</a> <em class="divi">|</em> <a href="#" style="font-weight:bold;">에세이</a></li>
-                                <li><a href="#" style="font-weight:bold;">인문</a> <em class="divi">|</em> <a href="#">역사</a></li>
+                                <li><a href="#" style="font-weight:bold;">소설/시</a> <em class="divi">|</em> <a href="#"
+                                        style="font-weight:bold;">에세이</a></li>
+                                <li><a href="#" style="font-weight:bold;">인문</a> <em class="divi">|</em> <a
+                                        href="#">역사</a></li>
                                 <li><a href="#">예술</a> <em class="divi">|</em> <a href="#">종교</a></li>
                                 <li><a href="#">사회</a> <em class="divi">|</em> <a href="#">과학</a></li>
                                 <li><a href="#" style="font-weight:bold;">경제 경영</a></li>
@@ -404,7 +417,8 @@
                                 <li><a href="#" style="font-weight:bold;">어린이</a></li>
                                 <li><a href="#">유아</a> <em class="divi">|</em> <a href="#">전집</a></li>
                                 <li><a href="#">청소년</a></li>
-                                <li><a href="#" style="font-weight:bold;">요리</a> <em class="divi">|</em> <a href="#">육아</a></li>
+                                <li><a href="#" style="font-weight:bold;">요리</a> <em class="divi">|</em> <a
+                                        href="#">육아</a></li>
                                 <li><a href="#">가정 살림</a></li>
                                 <li><a href="#">건강 취미</a></li>
                                 <li><a href="#">대학교재</a></li>
@@ -452,7 +466,8 @@
                     <div id="mSub003" class="mSub">
                         <div class="cate">
                             <ul>
-                                <h4><a href="#">중고도서 <img class="bl_arrR" src="img/welcomeN4.png" alt="중고도서 이동" width="6" height="9"></a></h4>
+                                <h4><a href="#">중고도서 <img class="bl_arrR" src="img/welcomeN4.png" alt="중고도서 이동"
+                                            width="6" height="9"></a></h4>
                                 <li><a href="#">가정과 생활</a></li>
                                 <li><a href="#">국어/외국어</a></li>
                                 <li><a href="#">대학교재</a></li>
@@ -467,11 +482,15 @@
                                 <li><a href="#">중고등참고서</a></li>
                                 <li><a href="#">초등참고서</a></li>
                                 <li><a href="#">외국도서</a></li>
-                                </ul>
-                                <h4 class="mgt15"><a href="#">직배송 중고 <img class="bl_arrR" src="img/welcomeN4.png" alt="직배송 중고 이동" width="6" height="9"></a></h4>
-                                <h4 class="mgt3"><a href="#">중고 음반 <img class="bl_arrR" src="img/welcomeN4.png" alt="중고 음반 이동" width="6" height="9"></a></h4>
-                                <h4 class="mgt3"><a href="#">중고 DVD <img class="bl_arrR" src="img/welcomeN4.png" alt="중고 DVD 이동" width="6" height="9"></a></h4>
-                                <h4 class="mgt3"><a href="#">매장안내 <img class="bl_arrR" src="img/welcomeN4.png" alt="중고매장 이동" width="6" height="9"></a></h4>
+                            </ul>
+                            <h4 class="mgt15"><a href="#">직배송 중고 <img class="bl_arrR" src="img/welcomeN4.png"
+                                        alt="직배송 중고 이동" width="6" height="9"></a></h4>
+                            <h4 class="mgt3"><a href="#">중고 음반 <img class="bl_arrR" src="img/welcomeN4.png"
+                                        alt="중고 음반 이동" width="6" height="9"></a></h4>
+                            <h4 class="mgt3"><a href="#">중고 DVD <img class="bl_arrR" src="img/welcomeN4.png"
+                                        alt="중고 DVD 이동" width="6" height="9"></a></h4>
+                            <h4 class="mgt3"><a href="#">매장안내 <img class="bl_arrR" src="img/welcomeN4.png" alt="중고매장 이동"
+                                        width="6" height="9"></a></h4>
                         </div>
                         <!-- 배너 -->
                     </div>
@@ -479,23 +498,25 @@
                 <li><a>eBook</a>
                     <div id="mSub004" class="mSub">
                         <div class="cate">
-                            <h4><a href="#">장르소설<img class="bl_arrR" src="img/welcomeN4.png" alt="장르소설 이동" width="6" height="9"></a></h4>
+                            <h4><a href="#">장르소설<img class="bl_arrR" src="img/welcomeN4.png" alt="장르소설 이동" width="6"
+                                        height="9"></a></h4>
                             <ul>
-                                <li><a href="#">로맨스</a>  <em class="divi">|</em> <a href="#">BL</a></li>
+                                <li><a href="#">로맨스</a> <em class="divi">|</em> <a href="#">BL</a></li>
                                 <li><a href="#">판타지/무협</a> <em class="divi">|</em> <a href="#">만화</a></li>
                             </ul>
-                            <h4 class="mgt10"><a href="#">단행본<img class="bl_arrR" src="img/welcomeN4.png" alt="단행본 이동" width="6" height="9"></a></h4>
+                            <h4 class="mgt10"><a href="#">단행본<img class="bl_arrR" src="img/welcomeN4.png" alt="단행본 이동"
+                                        width="6" height="9"></a></h4>
                             <ul>
-                                <li><a href="#">소설</a>  <em class="divi">|</em> <a href="#">에세이 시</a></li>
+                                <li><a href="#">소설</a> <em class="divi">|</em> <a href="#">에세이 시</a></li>
                                 <li><a href="#">경제 경영</a></li>
                                 <li><a href="#">자기계발</a></li>
-                                <li><a href="#">인문</a>  <em class="divi">|</em> <a href="#">사회 정치</a></li>
-                                <li><a href="#">역사</a>  <em class="divi">|</em> <a href="#">종교</a></li>
+                                <li><a href="#">인문</a> <em class="divi">|</em> <a href="#">사회 정치</a></li>
+                                <li><a href="#">역사</a> <em class="divi">|</em> <a href="#">종교</a></li>
                                 <li><a href="#">수험서/자격증</a></li>
                                 <li><a href="#">자연과학</a></li>
                                 <li><a href="#">외국어</a></li>
                                 <li><a href="#">IT 모바일</a></li>
-                                <li><a href="#">가정 살림</a>  <em class="divi">|</em> <a href="#">건강 취미</a></li>
+                                <li><a href="#">가정 살림</a> <em class="divi">|</em> <a href="#">건강 취미</a></li>
                                 <li><a href="#">해외원서</a></li>
                                 <li><a href="#">오디오북</a></li>
                             </ul>
@@ -619,7 +640,7 @@
                     </h2>
                     <div class="fundingContent">
                         <img src="img/exbook2.jpg" alt="">
-                        <p>책 제목이 들어갈 자리</p>
+                        <p>청춘, 너에게로 이어지는 길</p>
                     </div>
                 </div>
                 <div class="ad">
@@ -628,119 +649,8 @@
             </div>
             <div id="todayBook"> <!-- 오늘의 책 -->
                 <h2><a href="#">오늘의 책</a></h2>
-                <div id="todayBookList">
-                    <div class="tbUnit on">
-                        <div class="tbThumb">
-                            <a href="#"><img src="img/exbook.jpg" alt=""></a>
-                        </div>
-                        <div class="tbCont">
-                            <div class="tbContImg">
-                                <a href="#"><img src="img/exbook.jpg" alt=""></a>
-                            </div>
-                            <div class="tbContInfo">
-                                <p class="tbContInfoTitle">
-                                    <a href="#">제18회 창비청소년문학상 수상작</a>
-                                </p>
-                                <p class="tbContInfoCon">
-                                    <a href="#">사고 이후로 스스로의 우울을 외면한 채 살아가는 주인공 '유리'. 자신에게 각막을 기증해준 이의 흔적을 따라가며 낯선 바깥의 눈동자로 자신을 발견하게 된다. 오래된 상처를 마주보기 위해 떠나는 여행의 끝에는 과연 무엇이 기다리고 있을까.</a>
-                                </p>
-                                <p class="tbContInfoName">
-                                    <a href="#">스파클</a>
-                                </p>
-                                <p class="tbContInfoPub">
-                                    최현진 저 <span>|</span>  창비
-                                </p>
-                                <p class="tbContInfoPrice">
-                                    <span class="price"><strong>13,500</strong>원(10%할인)</span>
-                                    <span class="point"><em class="point"></em>750원</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tbUnit">
-                        <div class="tbThumb">
-                            <a href="#"><img src="img/exbook.jpg" alt=""></a>
-                        </div>
-                        <div class="tbCont">
-                            <div class="tbContImg">
-                                <a href="#"><img src="img/exbook.jpg" alt=""></a>
-                            </div>
-                            <div class="tbContInfo">
-                                <p class="tbContInfoTitle">
-                                    <a href="#">다른 부분</a>
-                                </p>
-                                <p class="tbContInfoCon">
-                                    <a href="#">사고 이후로 스스로의 우울을 외면한 채 살아가는 주인공 '유리'. 자신에게 각막을 기증해준 이의 흔적을 따라가며 낯선 바깥의 눈동자로 자신을 발견하게 된다. 오래된 상처를 마주보기 위해 떠나는 여행의 끝에는 과연 무엇이 기다리고 있을까.</a>
-                                </p>
-                                <p class="tbContInfoName">
-                                    <a href="#">스파클</a>
-                                </p>
-                                <p class="tbContInfoPub">
-                                    최현진 저 <span>|</span>  창비
-                                </p>
-                                <p class="tbContInfoPrice">
-                                    <span class="price"><strong>13,500</strong>원(10%할인)</span>
-                                    <span class="point"><em class="point"></em>750원</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tbUnit">
-                        <div class="tbThumb">
-                            <a href="#"><img src="img/exbook.jpg" alt=""></a>
-                        </div>
-                        <div class="tbCont">
-                            <div class="tbContImg">
-                                <a href="#"><img src="img/exbook.jpg" alt=""></a>
-                            </div>
-                            <div class="tbContInfo">
-                                <p class="tbContInfoTitle">
-                                    <a href="#">제18회 창비청소년문학상 수상작</a>
-                                </p>
-                                <p class="tbContInfoCon">
-                                    <a href="#">사고 이후로 스스로의 우울을 외면한 채 살아가는 주인공 '유리'. 자신에게 각막을 기증해준 이의 흔적을 따라가며 낯선 바깥의 눈동자로 자신을 발견하게 된다. 오래된 상처를 마주보기 위해 떠나는 여행의 끝에는 과연 무엇이 기다리고 있을까.</a>
-                                </p>
-                                <p class="tbContInfoName">
-                                    <a href="#">스파클</a>
-                                </p>
-                                <p class="tbContInfoPub">
-                                    최현진 저 <span>|</span>  창비
-                                </p>
-                                <p class="tbContInfoPrice">
-                                    <span class="price"><strong>13,500</strong>원(10%할인)</span>
-                                    <span class="point"><em class="point"></em>750원</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tbUnit">
-                        <div class="tbThumb">
-                            <a href="#"><img src="img/exbook.jpg" alt=""></a>
-                        </div>
-                        <div class="tbCont">
-                            <div class="tbContImg">
-                                <a href="#"><img src="img/exbook.jpg" alt=""></a>
-                            </div>
-                            <div class="tbContInfo">
-                                <p class="tbContInfoTitle">
-                                    <a href="#">제18회 창비청소년문학상 수상작</a>
-                                </p>
-                                <p class="tbContInfoCon">
-                                    <a href="#">사고 이후로 스스로의 우울을 외면한 채 살아가는 주인공 '유리'. 자신에게 각막을 기증해준 이의 흔적을 따라가며 낯선 바깥의 눈동자로 자신을 발견하게 된다. 오래된 상처를 마주보기 위해 떠나는 여행의 끝에는 과연 무엇이 기다리고 있을까.</a>
-                                </p>
-                                <p class="tbContInfoName">
-                                    <a href="#">스파클</a>
-                                </p>
-                                <p class="tbContInfoPub">
-                                    최현진 저 <span>|</span>  창비
-                                </p>
-                                <p class="tbContInfoPrice">
-                                    <span class="price"><strong>13,500</strong>원(10%할인)</span>
-                                    <span class="point"><em class="point"></em>750원</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div id="todayBookList">   <!-- 오늘의 책 4개 -->
+                    
                 </div>
             </div>
             <div id="bestSellKeyBook">
@@ -765,109 +675,109 @@
                             <div class="grop01 bestOl">
                                 <ol>
                                     <li><a href="#">
-                                        <strong class="icon rnk_1"></strong>
-                                        <span class="rnk_img">
-                                            <img src="img/exbook.jpg" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_1"></strong>
+                                            <span class="rnk_img">
+                                                <img src="img/exbook.jpg" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                     <li><a href="#">
-                                        <strong class="icon rnk_2"></strong>
-                                        <span class="rnk_img">
-                                            <img src="img/exbook.jpg" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_2"></strong>
+                                            <span class="rnk_img">
+                                                <img src="img/exbook.jpg" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                     <li><a href="#">
-                                        <strong class="icon rnk_3"></strong>
-                                        <span class="rnk_img">
-                                            <img src="img/exbook.jpg" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_3"></strong>
+                                            <span class="rnk_img">
+                                                <img src="img/exbook.jpg" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                     <li><a href="#">
-                                        <strong class="icon rnk_4"></strong>
-                                        <span class="rnk_img">
-                                            <img src="img/exbook.jpg" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_4"></strong>
+                                            <span class="rnk_img">
+                                                <img src="img/exbook.jpg" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                     <li><a href="#">
-                                        <strong class="icon rnk_5"></strong>
-                                        <span class="rnk_img">
-                                            <img src="img/exbook.jpg" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_5"></strong>
+                                            <span class="rnk_img">
+                                                <img src="img/exbook.jpg" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                 </ol>
                             </div>
                             <div class="grop02 bestOl" style="display:none">
                                 <ol>
                                     <li><a href="#">
-                                        <strong class="icon rnk_6"></strong>
-                                        <span class="rnk_img">
-                                            <img src="" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_6"></strong>
+                                            <span class="rnk_img">
+                                                <img src="" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                     <li><a href="#">
-                                        <strong class="icon rnk_7"></strong>
-                                        <span class="rnk_img">
-                                            <img src="" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_7"></strong>
+                                            <span class="rnk_img">
+                                                <img src="" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                     <li><a href="#">
-                                        <strong class="icon rnk_8"></strong>
-                                        <span class="rnk_img">
-                                            <img src="" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_8"></strong>
+                                            <span class="rnk_img">
+                                                <img src="" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                     <li><a href="#">
-                                        <strong class="icon rnk_9"></strong>
-                                        <span class="rnk_img">
-                                            <img src="" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_9"></strong>
+                                            <span class="rnk_img">
+                                                <img src="" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                     <li><a href="#">
-                                        <strong class="icon rnk_10"></strong>
-                                        <span class="rnk_img">
-                                            <img src="" alt="" />
-                                        </span>
-                                        <span class="rnk_info">
-                                            <strong>강남 아파트 인사이트</strong>
-                                            <em>오스틀로이드 저</em>
-                                        </span>
-                                    </a></li>
+                                            <strong class="icon rnk_10"></strong>
+                                            <span class="rnk_img">
+                                                <img src="" alt="" />
+                                            </span>
+                                            <span class="rnk_info">
+                                                <strong>강남 아파트 인사이트</strong>
+                                                <em>오스틀로이드 저</em>
+                                            </span>
+                                        </a></li>
                                 </ol>
                             </div>
                         </div>
@@ -887,67 +797,583 @@
                 <div id="nowBookCont">
                     <div class="nowBookSet">
                         <ul>
+                            <!-- 바뀌는 부분 -->
+                            <li>
+                                <div class="nowBookImg">
+                                    <a href="#"><img src="" alt=""></a>
+                                </div>
+                                <div class="nowBookInfo">
+                                    <p class="nowBookCmt"></p>
+                                    <p class="nowBookName"><a href="#"></a></p>
+                                    <p class="nowBookPub"></p>
+                                    <p class="nowBookPrice"><span></span></p>
+                                </div>
+                            </li>
                             <li></li>
                             <li></li>
                             <li></li>
-                            <li></li>
+                            <!--  -->
                         </ul>
                     </div>
                 </div>
             </div>
             <div id="pubRecBook">
-
+                <h2>출판사 추천</h2>
+                <ul id="pubRecBookList">
+                    <li><a href="#"><img src=""></a></li>
+                    <li></li>
+                </ul>
             </div>
         </section>
 
         <!-- banner -->
         <div id="banner1">
-            <a href="#"><img src="img/banner/img001.png" alt="생일 맞이 역조공"></a>
+            <a href="#"><img src="img/img001.png" alt="생일 맞이 역조공"></a>
         </div>
 
         <!-- 크레마샵 -->
         <section id="section4">
-
+            <div id="cremaShop">
+                <h2><a href="#">크레마샵</a></h2>
+                <div id="cremaShopCont">
+                    <div class="cremaShopSet">
+                        <ul>
+                            <!-- 바뀌는 부분 -->
+                            <li>
+                                <div class="cremaShopImg">
+                                    <a href="#"><img src="" alt=""></a>
+                                </div>
+                                <div class="cremaShopInfo">
+                                    <p class="cremaShopName"><a href="#"></a></p>
+                                    <p class="cremaShopPub"></p>
+                                    <p class="cremaShopPrice"><span></span></p>
+                                </div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <!--  -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="cremaAd">
+                <!-- 광고이미지 3개 반복 -->
+                <a href="#"><img src="" alt=""></a>
+            </div>
         </section>
 
         <!-- 예스's Pick -->
         <section id="section5">
+            <div class="multiSectionArea">
+                <div class="multiSection on" id="multiSec001"> <!-- 도서 -->
+                    <h2>
+                        <img src="img/section5/tab1.png">
+                        <p>도서</p>
+                    </h2>
+                    <div class="multiSecCont">
+                        <div class="multiTop">
+                            <h3>예스's Pick</h3>
+                            <div class="multiTitle">
+                                <ul>
+                                    <li class="on">화제의 책&nbsp;&nbsp;|</li>
+                                    <li>외국도서&nbsp;&nbsp;|</li>
+                                    <li>세트도서</li>
+                                </ul>
+                            </div>
+                            <div class="multiCont">
+                                <ul>
+                                    <li>
+                                        <div class="multiBookImg">
+                                            <a href="#"><img src="img/exbook.jpg" alt=""></a>
+                                        </div>
+                                        <div class="multiBookInfo">
+                                            <p class="multiBookCmt">test</p>
+                                            <p class="multiBookName"><a href="#">test</a></p>
+                                            <p class="multiBookPub">저자|출판사</p>
+                                            <p class="multiBookPrice"><span>16000</span>원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="multiBookImg"></div>
+                                        <div class="multiBookInfo"></div>
+                                    </li>
+                                    <li>
+                                        <div class="multiBookImg"></div>
+                                        <div class="multiBookInfo"></div>
+                                    </li>
+                                </ul>
+                                <!-- <ul></ul>
+                                <ul></ul>
+                                <ul></ul>
+                                <ul></ul> -->
+                            </div>
+                        </div>
+                        <div class="multiBtm">
+                            <div class="bookCornerTit">
+                                <h4>
+                                    <a href="#">한국 근대 예술사</a>
+                                </h4>
+                                <p>
+                                    <a href="#">슬프지만 찬란했던, 수많은 한국 근대 예술가들이 자신의
+                                        예술을 꽃피운 그 시간 그곳으로 여러분을 초대합니다.</a>
+                                </p>
+                            </div>
+                            <div class="bookCornerCon">
+                                <ul>
+                                    <li class="M1BotBook"> <!-- 반복 -->
+                                        <div class="book_img">
+                                            <a href="#">
+                                                <img src="" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="book_info">
+                                            <p class="book_name">
+                                                <a href=""></a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="multiSection" id="multiSec002"> <!-- 중고샵 -->
+                    <h2>
+                        <img src="img/section5/tab2.png">
+                        <p>중고샵</p>
+                    </h2>
+                    <div class="multiSecCont">
 
+                    </div>
+                </div>
+                <div class="multiSection" id="multiSec003"> <!-- eBook -->
+                    <h2>
+                        <img src="img/section5/tab3.png">
+                        <p>eBook</p>
+                    </h2>
+                    <div class="multiSecCont">
+
+                    </div>
+                </div>
+                <div class="multiSection" id="multiSec004"> <!-- CD/LP -->
+                    <h2>
+                        <img src="img/section5/tab4.png">
+                        <p>CD/LP</p>
+                    </h2>
+                    <div class="multiSecCont">
+
+                    </div>
+                </div>
+                <div class="multiSection" id="multiSec005"> <!-- DVD/BD -->
+                    <h2>
+                        <img src="img/section5/tab5.png">
+                        <p>DVD/BD</p>
+                    </h2>
+                    <div class="multiSecCont">
+
+                    </div>
+                </div>
+                <div class="multiSection" id="multiSec006"> <!-- 문구/GIFT -->
+                    <h2>
+                        <img src="img/section5/tab6.png">
+                        <p>문구/GIFT</p>
+                    </h2>
+                    <div class="multiSecCont">
+
+                    </div>
+                </div>
+                <div class="multiSection" id="multiSec007"> <!-- 티켓 -->
+                    <h2>
+                        <img src="img/section5/tab7.png">
+                        <p>티켓</p>
+                    </h2>
+                    <div class="multiSecCont">
+
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- 내가 최근 본 상품 -->
-        <section id="section6">
+        <!-- <section id="section6">
 
-        </section>
+        </section> -->
 
         <!-- 예스 24 유튜브 -->
         <section id="section7">
-
+            <h2 class="yesTvTit">
+                <a href="#"> 예스24 유튜브 </a>
+            </h2>
+            <div class="yesTvGrp">
+                <div class="yesTvSet">
+                    <div class="TvArea on">
+                        <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/Iq7uUQMRwwM?si=RP4pmUERNtzIpweG"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h3>
+                            사고 후 전신마비가 된 나에게 '청첩장'을 들고 찾아온 전여친 | 소캐팅 『미 비포 유』
+                        </h3>
+                    </div>
+                    <div class="TvArea">
+                        <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/maP8IjDXCCI?si=q-eFEvreI-aO-ju2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h3>
+                            틱톡커이자 댄서인데 북튜버인 '여자 박진영'을 홀린 잼얘 머신 | 크리에이터 쩜 | YES meets
+                        </h3>
+                    </div>
+                    <div class="TvArea">
+                        <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/CqE07pTA-ik?si=Z9PJKh5SkYtxSQBZ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h3>
+                            '개츠비'의 비밀? 영화보다 재밌는 원작 소설 파헤치기 | 소캐팅 『위대한 개츠비』
+                        </h3>
+                    </div>
+                    <div class="TvSub">
+                        <p class="TvSubTit">관련상품</p>
+                        <div class="TvSubGrp on">
+                            <a href="#"> class="imgbox">
+                                <img src="" alt="" />
+                            </a>
+                            <div class="TvSubExp">
+                                <p class="subCmt"></p>
+                                <p class="subTit">
+                                    <a href="#"></a>
+                                </p>
+                                <p class="subPub">
+                                    <span class="auth"></span>
+                                    <span class="pub"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="TvSubGrp">
+                            <a href="#"> class="imgbox">
+                                <img src="" alt="" />
+                            </a>
+                            <div class="TvSubExp">
+                                <p class="subCmt"></p>
+                                <p class="subTit">
+                                    <a href="#"></a>
+                                </p>
+                                <p class="subPub">
+                                    <span class="auth"></span>
+                                    <span class="pub"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="TvSubGrp">
+                            <a href="#"> class="imgbox">
+                                <img src="" alt="" />
+                            </a>
+                            <div class="TvSubExp">
+                                <p class="subCmt"></p>
+                                <p class="subTit">
+                                    <a href="#"></a>
+                                </p>
+                                <p class="subPub">
+                                    <span class="auth"></span>
+                                    <span class="pub"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movGrp">
+                    <ul>
+                        <li id="TV1" class="TvThumb">
+                            <a href="#"><img src="./img/section7/thumb1.jpg" alt="" /></a>
+                        </li>
+                        <li class="TvThumb">
+                            <a href="#"><img src="./img/section7/thumb2.jpg" alt="" /></a>
+                        </li>
+                        <li class="TvThumb">
+                            <a href="#"><img src="./img/section7/thumb3.jpg" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- 카드뉴스 -->
         <section id="section8">
-
+            <div id="cardNews">
+                <div id="cardNewsTop">
+                    <h2>카드뉴스로 보는 책</h2>
+                    <div id="cardNewsBook"> <!-- 카드 책 내용 -->
+                        <div class="book_img"><img src="" alt=""></div>
+                        <p class="book_title"></p>
+                        <div class="book_info">
+                            <p class="name"></p>
+                            <p class="pub"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardNewsBtm">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div id="yesNews">
+                <div class="yesNewsRow">
+                    <h2><a href="#">채널예스</a></h2>
+                    <div class="yesNewsCont">
+                        <ul>
+                            <li><a href="#"> <!-- 3개 반복 -->
+                                    <div class="chYesThumb"></div>
+                                    <div class="chYesInfo">
+                                        <p class="chYesInfoTitle"></p>
+                                        <p class="chYesInfoDesc"></p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <div class="yesNewsBtm">
+                            <dl>
+                                <dt>추천 기사</dt>
+                                <dd><a href="#">#큐레이션</a></dd>
+                                <dd><a href="#">#리뷰</a></dd>
+                                <dd><a href="#">#인터뷰</a></dd>
+                                <dd><a href="#">#당신의 책장</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="yesNewsRow">
+                    <h2><a href="#">사락</a></h2>
+                    <div class="yesNewsCont">
+                        <ul>
+                            <li><a href="#"> <!-- 3개 반복 -->
+                                    <div class="chYesThumb"></div>
+                                    <div class="chYesInfo">
+                                        <p class="chYesInfoTitle"></p>
+                                        <p class="chYesInfoDesc"></p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <div class="yesNewsBtm">
+                            <dl>
+                                <dt>이달의 사락</dt>
+                                <dd><a href="#">@y****u</a></dd>
+                                <dd><a href="#">@h****2</a></dd>
+                                <dd><a href="#">@s****g</a></dd>
+                                <dd><a href="#">@p****u</a></dd>
+                                <dd><a href="#">@m****5</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- 서비스 -->
         <section id="section9">
-
+            <div id="yesServ">
+                <h2>예스24 대표서비스</h2>
+                <div id="yesServCont">
+                    <dl class="servCheap">
+                        <dt><strong>싸다</strong></dt>
+                        <dd><a href="#">영원한 YES포인트</a></dd>
+                        <dd><a href="#">무료배송+추가적립</a></dd>
+                        <dd><a href="#">신규회원 혜택</a></dd>
+                        <dd><a href="#">중고샵/바이백 </a></dd>
+                        <dd><a href="#">제휴카드 안내</a></dd>
+                        <dd><a href="#">최저가격보상제도</a></dd>
+                    </dl>
+                    <dl class="servFast">
+                        <dt><strong>빠르다</strong></dt>
+                        <dd><a href="#">총알배송</a></dd>
+                        <dd><a href="#">총알검색</a></dd>
+                        <dd><a href="#">매장 픽업 서비스</a></dd>
+                        <dd><a href="#">알림 신청 안내</a></dd>
+                        <dd><a href="#">모바일 서비스</a></dd>
+                        <dd><a href="#">간편결제 서비스</a></dd>
+                    </dl>
+                    <dl class="servTrust">
+                        <dt><strong>믿을 수 있다</strong></dt>
+                        <dd><a href="#">YES마니아</a></dd>
+                        <dd><a href="#">스타블로거</a></dd>
+                        <dd><a href="#">제휴 상품권 환전</a></dd>
+                        <dd><a href="#">YES상품권</a></dd>
+                    </dl>
+                    <dl class="servBn">
+                        <dt>YES24 추천서비스</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./img/section9/img1.png" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./img/section9/img2.png" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./img/section9/img3.png" alt="" /></a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="schoolColab">
+                <a href="#">
+                    <h2>스쿨콜라보</h2>
+                    <img src="img/section9/bn1.jpg">
+                </a>
+            </div>
+            <div id="mustReadEvent">
+                <ul>
+                    <li><a href="#"><img src="img/section9/right1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/section9/right2.jpg" alt=""></a></li>
+                </ul>
+            </div>
         </section>
 
         <!-- 공지사항 -->
         <section id="section10">
-
+            <h2>공지사항</h2>
+            <ul class="notiLi">
+                <li>
+                    <a href="#">
+                        &middot;9월 신용카드 무이자할부 안내
+                        <span class="notDate">2023-09-01</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        &middot;9월 상품권+쿠폰+결제+추천 혜택모음
+                        <span class="notDate">2023-09-01</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        &middot;도서앱 다운받으면 상품권 1천원
+                        <span class="notDate">2023-09-01</span>
+                    </a>
+                </li>
+            </ul>
         </section>
 
         <!-- 카드 광고 -->
         <section id="section11">
-
+            <ul>
+                <li><a href="#"><img src="img/section11/ad1.jpg"></a></li>
+                <li><a href="#"><img src="img/section11/ad2.jpg"></a></li>
+            </ul>
         </section>
 
         <footer>
-
+            <div id="footer_wrap">
+                <div class="footer_top">
+                    <ul id="menu_li">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li>
+                            <a href="#" style="font-weight: bold; color: #000">개인정보처리방침</a>
+                        </li>
+                        <li><a href="#">청소년보호정책</a></li>
+                        <li><a href="#">도서홍보안내</a></li>
+                        <li><a href="#">광고안내</a></li>
+                        <li><a href="#">제휴안내</a></li>
+                        <li><a href="#">복지제휴</a></li>
+                        <li><a href="#">매장안내</a></li>
+                    </ul>
+                    <ul id="sns_li">
+                        <li>
+                            <a href="#"><img src="img/footer/sns1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/footer/sns2.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/footer/sns3.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/footer/sns4.png" /></a>
+                        </li>
+                    </ul>
+                    <dl id="fam_dl">
+                        <select>
+                            <option>가족회사 소개</option>
+                            <option>한세예스24홀딩스</option>
+                            <option>한세실업</option>
+                            <option>한세드림</option>
+                            <option>컬리수</option>
+                            <option>STYLE24</option>
+                            <option>동아출판</option>
+                        </select>
+                    </dl>
+                </div>
+                <div class="footer_content">
+                    <dl class="foot_address">
+                        <dt>
+                            <a href="#">
+                                <img src="./img/footer/footbn.png" alt="" />
+                            </a>
+                            <em class="footer_main">예스이십사(주)</em>
+                        </dt>
+                        <dd>
+                            <address>
+                                <span class="addRow">대표 : 김석환, 최세라</span>
+                                <span class="addRow">주소 : 서울시 영등포구 은행로 11, 5층~6층(여의도동,일신빌딩)</span>
+                                <span class="addRow">사업자등록번호 : 229-81-37000 &nbsp;&nbsp;&nbsp; 통신판매업신고 : 제 2005-02682호 
+                                    <a href="#" id="corpNumLink">사업자 정보확인</a></span>
+                                <span class="addRow">이메일 : yes24help@yes24.com &nbsp;&nbsp;&nbsp; 호스팅 서비스사업자 : 예스이십사(주)</span>
+                                <p class="text_copyright">
+                                    Copyright ⓒ YES24 Corp. All Rights Reserved.
+                                </p>
+                            </address>
+                        </dd>
+                    </dl>
+                    <ul class="csLi">
+                        <li class="csTel">
+                            <dl>
+                                <dt>고객문의</dt>
+                                <dd>
+                                    <p>
+                                        <span class="item">도서/음반</span>
+                                        <span class="yes_b">1544-3800</span>
+                                    </p>
+                                    <p>
+                                        <span class="item right">중고샵</span>
+                                        <span class="yes_b">1566-4295</span>
+                                    </p>
+                                    <p>
+                                        <span class="item">티켓예매</span>
+                                        <span class="yes_b">1544-6399</span>
+                                    </p>
+                                    <p>
+                                        <span class="item right">
+                                            <a href="#">eBook 1:1 문의/채팅상담</a>
+                                        </span>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="csFaq">
+                            <div class="cs">
+                                <a href="#" class="faq">1:1 문의하기</a>
+                            </div>
+                            <div class="cs">
+                                <a href="#" class="faq">자주 묻는 질문</a>
+                            </div>
+                            <div class="cs">
+                                <a href="#" class="faq">상담시간 안내</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_glory">
+                    <img src="./img/footer/img_awards.gif" alt="" />
+                </div>
+            </div>
         </footer>
     </div>
 </body>
+
 </html>
