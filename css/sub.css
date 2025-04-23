@@ -637,7 +637,8 @@
     margin-right: 20px;
 }
 
-#bBuyActionCont .bBuyActionContTop .bBuyBtn a {
+#bBuyActionCont .bBuyActionContTop .bBuyBtn a,
+#bBuyActionCont .bBuyActionContBtm .bListBtn a {
     display: block;
     margin-bottom: 5px;
     border-radius: 3px;
@@ -646,17 +647,23 @@
     line-height: 38px;
     font-size: 13px;
     font-weight: bold;
-    color: #fff;
+    border: solid 1px #ebebeb;
+    border-bottom-color: #d8d8d8;
+    border-right-color: #d8d8d8;
+    background-color: #fff;
+    color: #333;
 }
 
 #bBuyActionCont .bBuyActionContTop .bBuyBtn a.addCart {
     border: 1px solid #0080ff;
     background-color: #0080ff;
+    color: #fff;
 }
 
 #bBuyActionCont .bBuyActionContTop .bBuyBtn a.buyNow {
     border: 1px solid #199db3;
     background-color: #199db3;
+    color: #fff;
 }
 
 #bBuyActionCont .bBuyActionContBtm {
@@ -677,4 +684,137 @@
     font-size: 12px;
     border: none !important;
     text-align: left
+}
+
+/* middle banner */
+#mBanner {
+    width: 1200px;
+    margin: 40px auto 30px;
+    position: relative;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#mBanner #liBanner {
+    margin-right: 218px;
+    position: relative;
+}
+
+#mBanner #liBanner .liBannerUnit .liBannerThumb {
+    display: block;
+    width: 226px;
+    height: 25px;
+    line-height: 22px;
+}
+
+#mBanner #liBanner .liBannerUnit .liBannerThumb a {
+    display: block;
+    height: 25px;
+    padding-left: 9px;
+    color: #666;
+    border-top: solid 1px #ebebeb;
+    border-right: solid 1px #ebebeb;
+    background-color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#mBanner #liBanner .liBannerUnit:first-child .liBannerThumb a {
+    border-top: none;
+}
+
+#mBanner #liBanner .liBannerUnit.on .liBannerThumb a {
+    background-color: #ebebeb;
+    border-right: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+#mBanner #liBanner .liBannerUnit .liBannerImg {
+    position: absolute;
+    top: 0;
+    left: 226px;
+    display: none;
+}
+
+#mBanner #liBanner .liBannerUnit.on .liBannerImg {
+    display: block;
+}
+
+#mBanner #liBanner .liBannerUnit .liBannerImg img {
+    width: 753px;
+    height: 100px;
+}
+
+#mBanner #liBannerRight {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 218px;
+    height: 100px;
+    border-left: 1px solid #ebebeb;
+}
+
+#mBanner #liBannerRight a {
+    display: block;
+}
+
+#mBanner #liBannerRight img {
+    width: 218px;
+    height: 100px;
+}
+
+#buyTog {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#buyTog #buyTogNav {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#buyTog #buyTogNav li {
+    display: table-cell;
+    width: 50px;
+    height: 48px;
+    border: 1px solid #d8d8d8;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#buyTog #buyTogNav li span {
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#buyTog #buyTogNav li:first-child {
+    border-right: none;
+}
+
+
+#buyTog #buyTogNav li.on {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+#buyTog .list {
+    border: 1px solid #d8d8d8;
+    border-top: none;
+    background-color: white;
+    position: relative;
+    display: none;
+}
+
+#buyTog .list.on {
+    display: block;
 }
