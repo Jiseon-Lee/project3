@@ -10,7 +10,7 @@ section {
 /* nav, slider */
 #section1 {
     height: 421px;
-    margin: 0 auto;
+    margin: 20px auto 0;
     background-color: #fff;
 }
 
@@ -1672,8 +1672,7 @@ section {
 /* 카드 광고 */
 #section11 {
     height: 80px;
-    /**/
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 #section11 li {
