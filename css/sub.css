@@ -654,17 +654,17 @@
     color: #333;
 }
 
-#bBuyActionCont .bBuyActionContTop .bBuyBtn a.addCart {
-    border: 1px solid #0080ff;
-    background-color: #0080ff;
-    color: #fff;
+a.addCart {
+    border: 1px solid #0080ff !important;
+    background-color: #0080ff !important;
+    color: #fff !important;
 }
 
-#bBuyActionCont .bBuyActionContTop .bBuyBtn a.buyNow {
-    border: 1px solid #199db3;
-    background-color: #199db3;
-    color: #fff;
-}
+a.buyNow {
+    border: 1px solid #199db3 !important;
+    background-color: #199db3 !important;
+    color: #fff !important;
+}   
 
 #bBuyActionCont .bBuyActionContBtm {
     margin: 0 20px;
@@ -815,6 +815,576 @@
     display: none;
 }
 
-#buyTog .list.on {
+#buyTog .list.on {      /* 함께 산 책 / 많이 산 책 toggle */
     display: block;
+}
+
+#buyTogListGroup {
+    padding: 30px 0 20px 38px;
+    height: 302px;
+}
+
+#buyTogListGroup .buyTogListUnit {
+    display: none;
+}
+
+#buyTogListGroup .buyTogListUnit.on {   /* buyTogList 페이지 */
+    display: block;
+}
+
+#buyTogListGroup .buyTogListUnit li {
+    width: 187px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogImg {
+    display: inline-block;
+    margin-left: 31px;
+    width: 125px;
+    max-height: 185px;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogImg a {
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogImg img {
+    width: 125px;
+    max-height: 185px;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogInfo {
+    width: 155px;
+    min-height: 105px;
+    margin: 17px 0 0 31px;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogName {
+    max-height: 34px;
+    overflow: hidden;
+    word-break: break-all;
+    line-height: 17px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #333;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogName a {
+    color: #333;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogPub {
+    display: block;
+    margin-top: 6px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #999;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogRating {
+    margin-top: 5px;
+    padding-top: 3px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #333;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogRating .total_rating {
+    width: 80px;
+    height: 15px;
+    vertical-align: -3px;
+    background-position: 0 -900px;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogPrice {
+    margin-top: 8px;
+    color: #333;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogPrice strong {
+    color: #000;
+    font-size: 14px;
+    vertical-align: -1px;
+}
+
+#buyTogListGroup .buyTogListUnit .bTogPrice span {
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+#bookDetailNav {
+    position: relative;
+    margin-top: 40px;
+    height: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#bookDetailNavWrap {
+    background-color: #f8f8f8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    min-height: 59px;
+    border-bottom: 1px solid #333;
+}
+
+#bNavName {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    display: none;
+}
+
+#bNavName h2 {
+    width: 1200px;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    white-space: no-wrap;
+    text-overflow: ellipsis;
+}
+
+#bNavTab {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    height: 59px;
+    position: relative;
+}
+
+#bNavTab li {
+    position: relative;
+    float: left;
+    height: 59px;
+    width: 170px;
+}
+
+#bNavTab li.on {
+    background-color: #333;
+}
+
+#bNavTab li a {
+    display: table-cell;
+    padding: 0 8px;
+    width: 154px;
+    height: 59px;
+    line-height: 1.3em;
+    vertical-align: middle;
+}
+
+#bNavTab li a em {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+#bNavTab li.on a em {
+    color: #fff;
+}
+
+#bNavTab li a em.reviewCnt {
+    white-space: nowrap;
+    font-size: 11px;
+    color: #666;
+    font-weight: normal;
+}
+
+#bNavBtn {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    text-align: right;
+}
+
+#bNavBtn .salePrice {
+    line-height: 30px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    color: #ff6666;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#bNavBtn .salePrice span {
+    font-size: 24px;
+    vertical-align: -1px;
+}
+
+#bNavBtn .bNavBtnWrap a {
+    display: inline-block;
+    margin-left: 1px;
+    width: 78px;
+    height: 28px;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 27px;
+    font-weight: bold;
+}
+
+#bookDetailBtm {
+    padding: 33px 0;
+    overflow: hidden;
+}
+
+#bookDetailBtmWrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#bDetailBtmLeft {
+    float: left;
+    width: 960px;
+}
+
+#bDetailBtmLeft * {
+    max-width: 940px;
+}
+
+#bDetailBtmLeft .bInformation {
+    margin-top: 35px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+}
+
+#bDetailBtmLeft .bInformation h4 {
+    margin-bottom: 15px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+#bDetailBtmLeft .bInformation h4 span {
+    font-weight: normal;
+    font-size: 15px;
+    color: #666;
+    vertical-align: 1px;
+}
+
+#bDetailBtmLeft #bInfoSpecific {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+#bDetailBtmLeft table {
+    border-collapse: collapse;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    width: 940px;
+}
+
+#bDetailBtmLeft table th {
+    width: 170px;
+    padding: 12px;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #333;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    background-color: #f8f8f8;
+}
+
+#bDetailBtmLeft table tr:first-child th {
+    border-top: none;
+}
+
+#bDetailBtmLeft table td {
+    padding: 12px 14px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #666;
+    border-top: 1px solid #ebebeb;
+    text-align: left;
+}
+
+
+#bDetailBtmLeft table tr:first-child td {
+    border-top: none;
+}
+
+#bDetailBtmLeft #bInfoCate {
+    padding-bottom: 36px;
+}
+
+#bInfoCate dt {
+    padding-bottom: 2px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+}
+
+#bInfoCate dd {
+    line-height: 16px;
+    color: #666;
+    padding: 2px 0 1px 7px;
+}
+
+#bInfoCate dd a {
+    color: #666;
+}
+
+#bInfoCate dd .icon_arr_right {
+    display: inline-block;
+    width: 6px;
+    height: 12px;
+    margin: 0 2px;
+    vertical-align: -2px;
+    background-position: -120px -242px;
+}
+
+#bookDetailBtm #bInfoTag {
+    padding-bottom: 35px;
+}
+
+#bInfoTag .tagList {
+    padding-bottom: 15px;
+}
+
+#bInfoTag .tagList .tag {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 4px 5px 0;
+    padding: 0 9px;
+    border: 1px solid #ebebeb;
+    border-radius: 15px;
+    color: #666;
+    font-size: 12px;
+    background-color: #f8f8f8;
+}
+
+#bInfoTag .tagList .tag.on {
+    color: #fff;
+    border-color: #333;
+    background-color: #333;
+}
+
+#bInfoTag .bookList ul {
+    display: table;
+    table-layout: fixed;
+}
+
+#bInfoTag .bookList ul li {
+    display: table-cell;
+    width: 200px;
+}
+
+#bInfoTag .bookList ul li:nth-child(5) {
+    width: auto !important;
+}
+
+#bInfoTag .bookList .bImg {
+    display: inline-block;
+    width: 130px;
+    height: auto;
+}
+
+#bInfoTag .bookList .bImg a {
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    display: inline-block;
+}
+#bInfoTag .bookList .bImg img {
+    width: 130px;
+    height: auto;
+}
+
+#bInfoTag .bookList .bInfo {
+    width: 140px;
+    min-height: 80px;
+    margin-top: 17px;
+}
+
+#bInfoTag .bookList .bName {
+    max-height: 34px;
+    overflow: hidden;
+    word-break: break-all;
+    line-height: 17px;
+    font-weight: normal;
+    font-size: 13px;
+    color: #333;
+}
+
+#bInfoTag .bookList .bName a {
+    color: #333;
+}
+
+#bInfoTag .bookList .bPub {
+    display: block;
+    margin-top: 6px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #999;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#bInfoTag .bookList .bPrice {
+    margin-top: 8px;
+    color: #333;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#bInfoTag .bookList .bPrice strong {
+    color: #000;
+    font-size: 14px;
+    vertical-align: -1px;
+}
+
+#bInfoTag .bookList .bPrice span {
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+#bInfoEvent ul {
+    font-size: 0;
+}
+
+#bInfoEvent .bInfoEventCont li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    width: 300px;
+    min-height: 107px;
+    vertical-align: top;
+}
+
+#bInfoEvent .bInfoEventCont li.eventAppend {
+    display: none;
+}
+
+#bInfoEvent .bInfoEventCont li:nth-child(3n) {
+    margin-right: 0;
+}
+
+#bInfoEvent .bInfoEventCont li:nth-child(n+4) {
+    margin-top: 20px;
+}
+
+#bInfoEvent .bInfoEventCont img {
+    width: 300px;
+    height: 150px;
+    border-radius: 3px;
+    display: block;
+}
+
+#bInfoEvent .bInfoEventCont .eveInfo {
+    margin-top: 15px;
+}
+
+#bInfoEvent .bInfoEventCont .eveInfo .eveName {
+    max-height: 38px;
+    overflow: hidden;
+    line-height: 19px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #333;
+    word-break: break-all;
+}
+
+#bInfoEvent .bInfoEventCont .eveInfo .eveName a {
+    line-height: 19px;
+    color: #333;
+    word-break: break-all;
+}
+
+#bInfoEvent .bInfoEventCont .eveInfo .eveDate {
+    display: block;
+    margin-top: 5px;
+    height: 18px;
+    line-height: 18px;
+    color: #999;
+    font-weight: normal;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#bookDetailBtm .moreBtn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 0 9px 0;
+    line-height: 16px;
+    text-align: right;
+    font-size: 12px;
+    color: #6699cc;
+}
+
+#bookDetailBtm .moreBtn .ico_arr {
+    margin: 4px 0 0 5px;
+    width: 10px;
+    height: 8px;
+    background-position: -130px -280px;
+}
+
+#bookDetailBtm .bInformation .cont {
+    font-size: 15px;
+    line-height: 1.74em;
+    color: #666;
+}
+
+#bookDetailBtm .bInformation .cont b {
+    font-size: 15px;
+    line-height: 1.74em;
+    color: #666;
+}
+
+#bInfoToc {
+    padding-bottom: 0 !important;
+}
+
+#bInfoToc .bInfoIntroContWrap {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+#bInfoToc .bInfoIntroContWrap #tocMoreBtn {
+    padding: 55px 0 9px 0;
+    background: url("../img/sub/mask_corp.png") repeat-x center top;
+}
+
+
+
+
+#bDetailBtmRight {
+    float: right;
+    padding-top: 7px;
+    width: 220px;
 }

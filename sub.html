@@ -546,7 +546,8 @@
                                         <dt>수량</dt>
                                         <dd>
                                             <span class="bCntInput">
-                                                <input type="text" name="ordBookCnt" id="ordBookCnt" value="1" maxlength="4">
+                                                <input type="text" name="ordBookCnt" id="ordBookCnt" value="1"
+                                                    maxlength="4">
                                             </span>
                                             <button type="button" class="minus"></button>
                                             <button type="button" class="plus"></button>
@@ -613,30 +614,314 @@
                 </ul>
                 <div id="buyTogList" class="list on">
                     <div id="buyTogListGroup">
+                        <ul class="buyTogListUnit on"> <!-- 4개 -->
+                            <li> <!-- 6개 -->
+                                <div class="bTogImg">
+                                    <a href="#"><img src="img/exbook.jpg" alt=""></a>
+                                </div>
+                                <div class="bTogInfo">
+                                    <p class="bTogName"><a href="#">책 제목</a></p>
+                                    <p class="bTogPub">저자 저&nbsp;&nbsp;|&nbsp;&nbsp;출판사</p>
+                                    <p class="bTogRating">
+                                        <span class="bgYUI total_rating"></span>
+                                        <span class="ratingCnt">104건</span>
+                                    </p>
+                                    <p class="bTogPrice"><strong>13,500</strong>원<span>(10%할인)</span></p>
+                                </div>
+                            </li>
+                        </ul>
                         <ul class="buyTogListUnit"> <!-- 4개 -->
                             <li> <!-- 6개 -->
                                 <div class="bTogImg">
-                                    <a href="#"><img src="" alt=""></a>
+                                    <a href="#"><img src="img/exbook.jpg" alt=""></a>
                                 </div>
                                 <div class="bTogInfo">
-                                    <p class="bTogName"></a></p>
-                                    <p class="bTogPub"></p>
-                                    <p class="bTogRating"></p>
-                                    <p class="bTogPrice"><span class="price"><strong></strong>원(10%할인)</span></p>
+                                    <p class="bTogName"><a href="#">책 제목</a></p>
+                                    <p class="bTogPub">저자 저&nbsp;&nbsp;|&nbsp;&nbsp;출판사</p>
+                                    <p class="bTogRating">
+                                        <span class="bgYUI total_rating"></span>
+                                        <span class="ratingCnt">104건</span>
+                                    </p>
+                                    <p class="bTogPrice"><strong>13,500</strong>원<span>(10%할인)</span></p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div id="buyManyList" class="list"></div>
+                <div id="buyManyList" class="list">
+                </div>
             </div>
             <!-- 책 상세 nav -->
-            <div>
-
+            <div id="bookDetailNav">
+                <div id="bookDetailNavWrap">
+                    <div id="bNavName">
+                        <h2>행복은 언제나 당신의 편</h2>
+                    </div>
+                    <div id="bNavTab">
+                        <ul id="bNabLi">
+                            <li class="on"><a href="#bInfoSpecific"><em>도서정보</em></a></li>
+                            <li><a href="#bInfoRv"><em>리뷰/한줄평</em><em class="reviewCnt">(0/2)</em></a></li>
+                            <li><a href="#bInfoDilivery"><em>배송/반품/교환</em></a></li>
+                        </ul>
+                        <div id="bNavBtn">
+                            <span class="salePrice"><span>15,750</span>원</span>
+                            <span class="bNavBtnWrap">
+                                <a href="#" class="addCart">카트에 넣기</a>
+                                <a href="#" class="buyNow">바로구매</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- 책 상세 Bottom -->
-            <div>
+            <div id="bookDetailBtm">
+                <div id="bookDetailBtmWrap">
+                    <div id="bDetailBtmLeft">
+                        <div id="bInfoSpecific" class="bInformation">
+                            <h4>품목정보</h4>
+                            <table class="bInfoSpecificTb">
+                                <tbody>
+                                    <tr>
+                                        <th>발행일</th>
+                                        <td>2025년 04월 16일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>쪽수, 무게, 크기</th>
+                                        <td>204쪽&nbsp;&nbsp;|&nbsp;&nbsp;266g&nbsp;&nbsp;|&nbsp;&nbsp;120*188*17mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ISBN13</th>
+                                        <td>9791193262481</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ISBN10</th>
+                                        <td>1193262488</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="bInfoCate" class="bInformation">
+                            <h4>관련분류</h4>
+                            <dl class="bInfoCateDl">
+                                <dt>카테고리 분류</dt>
+                                <dd>
+                                    <span class="locaSet">
+                                        <a href="#">&middot; &nbsp;국내도서</a>
+                                    </span>
+                                    <span class="locaSet">
+                                        <span class="icon_arr_right bgYUI"></span>
+                                        <a href="#">에세이</a>
+                                    </span>
+                                    <span class="locaSet">
+                                        <span class="icon_arr_right bgYUI"></span>
+                                        <a href="#">한국 에세이</a>
+                                    </span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div id="bInfoTag" class="bInformation">
+                            <h4>이 상품의 태그</h4>
+                            <div class="bInfoTagCont">
+                                <div class="tagList">
+                                    <span class="tag on">#행복해지고싶은당신에게</span>
+                                    <span class="tag">#책선물</span>
+                                    <span class="tag">#가정의달선물</span>
+                                </div>
+                                <div class="bookList">
+                                    <ul>
+                                        <li>
+                                            <div class="bImg">
+                                                <a href="#"><img src="img/exbook.jpg" alt=""></a>
+                                            </div>
+                                            <div class="bInfo">
+                                                <p class="bName"><a href="#">책 제목</a></p>
+                                                <p class="bPub">저자 저&nbsp;&nbsp;|&nbsp;&nbsp;출판사</p>
+                                                <p class="bPrice"><strong>13,500</strong>원<span>(10%할인)</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bInfoEvent" class="bInformation">
+                            <h4>이 상품의 이벤트<span>(16개)</span></h4>
+                            <div class="bInfoEventCont">
+                                <ul>
+                                    <li>
+                                        <div class="eveThumb">
+                                            <a href="#"><img src="img/sub/event1.jpg"></a>
+                                        </div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">문지 에크리 브랜드전 : 한강 신작 『빛과 실</a></p>
+                                            <p class="eveDate">소진시</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="eveThumb"><a href="#"><img src="img/sub/event2.jpg"></a></div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">4월 23일 책의 날 어떤 책 읽을까?</a></p>
+                                            <p class="eveDate">2025년 04월 17일 ~ 2025년 05월 23일</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="eveThumb">
+                                            <a href="#"><img src="img/sub/event3.jpg"></a>
+                                        </div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">[사락] 매월 혜택 증정! 꾸준하게 독서모임</a></p>
+                                            <p class="eveDate">상시</p>
+                                        </div>
+                                    </li>
+                                    <li class="eventAppend">
+                                        <div class="eveThumb">
+                                            <a href="#"><img src="img/sub/event4.jpg"></a>
+                                        </div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">[에세이 기획] 오늘의 마음 날씨 : 슬픔을 말하는 책</a></p>
+                                            <p class="eveDate">2025년 04월 01일 ~ 2025년 04월 30일</p>
+                                        </div>
+                                    </li>
+                                    <li class="eventAppend">
+                                        <div class="eveThumb">
+                                            <a href="#"><img src="img/sub/event5.jpg"></a>
+                                        </div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">그래제본소: 스미는 목소리</a></p>
+                                            <p class="eveDate">2025년 03월 31일 ~ 2025년 04월 27일</p>
+                                        </div>
+                                    </li>
+                                    <li class="eventAppend">
+                                        <div class="eveThumb">
+                                            <a href="#"><img src="img/sub/event6.jpg"></a>
+                                        </div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">[음식 기획] 맛 따라 이야기 따라 떠나는 미식 여행</a></p>
+                                            <p class="eveDate">소진시</p>
+                                        </div>
+                                    </li>
+                                    <li class="eventAppend">
+                                        <div class="eveThumb">
+                                            <a href="#"><img src="img/sub/event7.jpg"></a>
+                                        </div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">좋은 사람 도감』기획 : 좋은 사람 있으면 소개시켜줘!</a></p>
+                                            <p class="eveDate">2025년 03월 17일 ~ 2025년 04월 30일</p>
+                                        </div>
+                                    </li>
+                                    <li class="eventAppend">
+                                        <div class="eveThumb">
+                                            <a href="#"><img src="img/sub/event8.jpg"></a>
+                                        </div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">삶을 지탱할 이야기 : 치유와 위로의 에세이 문장들</a></p>
+                                            <p class="eveDate">2025년 02월 25일 ~ 2025년 04월 30일</p>
+                                        </div>
+                                    </li>
+                                    <li class="eventAppend">
+                                        <div class="eveThumb">
+                                            <a href="#"><img src="img/sub/event9.jpg"></a>
+                                        </div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">[사락] 특별한 모임에 참여해보세요! 사락 인증 독서모임</a></p>
+                                            <p class="eveDate">2025년 03월 07일 ~ 2025년 04월 30일</p>
+                                        </div>
+                                    </li>
+                                    <li class="eventAppend">
+                                        <div class="eveThumb">
+                                            <a href="#"><img src="img/sub/event10.jpg"></a>
+                                        </div>
+                                        <div class="eveInfo">
+                                            <p class="eveName"><a href="#">예스리커버 : 꽃길이 따로 있나, 내 삶이 꽃인 것을</a></p>
+                                            <p class="eveDate">상시</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="eventMoreBtn" class="moreBtn"><span class="moreBtnTxt">펼쳐보기</span><em class="bgYUI ico_arr"></em></div>
+                        </div>
+                        <div id="bInfoIntro" class="bInformation">
+                            <h4>책소개</h4>
+                            <div class="bInfoIntroContWrap">
+                                <div class="bInfoIntroCont cont">
+                                    <b>
+                                        “나, 당신, 그리고 우리의 삶을 지지합니다!”<br/>
+                                        걱정은 바람에 흘려버리고 마음속 행복을 발견하는 책<br/>
+                                    </b><br/>
+                                        《악당은 아니지만 지구정복》으로 작가로서의 이름을 알린 에세이스트 안시내가 여덟 번째 신간 《행복은 언제나 당신의 편》으로 돌아왔다. 
+                                        낯선 곳보다 익숙한 장소를 자주 찾게 되었다는 저자의 고백은, 삶을 바라보는 그녀의 시선이 어떻게 달라졌는지를 궁금하게 만든다. 
+                                        여전히 쓰고, 여행하고, 사람을 사랑하며 살아가고 싶다는 다짐은, 오랜 친구의 안부처럼 우리의 마음을 조용히 건드린다.<br/><br/>
+                                        
+                                        이번 책에서는 행복은 무언가를 이뤘을 때가 아니라, 그저 살아가고 있을 때 가장 가까이에 있다고 말한다. 지금의 나를 있는 그대로 
+                                        받아들이는 용기, 사랑이 끝난 자리에서 자신을 다시 껴안을 의지, 일상의 반복 속에서 내 삶은 계속 자라고 있다는 믿음, 바쁘게 살아가는 
+                                        와중에도 숨을 고를 줄 아는 감각을 배울 수 있다. <br/><br/>
+                                        
+                                        책에서 발견한 행복을 주변 사람들에게도 나눠주고 싶은 독자를 위해 ‘문장 스티커’를 마련했다. 스티커에서 전하고 싶은 마음을 골라 책에 붙여 선물해 보자. 
+                                        슬픔은 익숙하고 행복은 어색한 요즘, 이 책을 읽은 모든 독자들이 행복에 대해 자연스럽게 말할 수 있길 바란다.
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bInfoToc" class="bInformation">
+                            <h4>목차</h4>
+                            <div class="bInfoIntroContWrap">
+                                <div class="bInfoTocCont cont">
+                                    <b>Part 1 그게 날 만들었지</b><br/><br/>
+                                    레몬진저허니티<br/>그럼에도 불구하고 사랑을 하자고<br/>술에 잔뜩 취한 날엔 페이스북을 연다<br/>미워할 용기<br/>
+                                    마당의 작은 텃밭에서 잡초를 키운다<br/>나를 온전하게 사랑하는 방식<br/>이토록 초라한 게 작가의 삶일 줄이야<br/>
+                                    시원한 웃음<br/>치나! 해브어굿데이<br/><br/>
 
+                                    <b>Part 2 여전해서 고마운</b><br/><br/>가파도, 나의 춘자 이모<br/>어린 날 내 손끝에 남은<br/>첫 비행<br/>예순넷 소녀<br/>
+                                    시든 꽃도 살리는<br/>무화과를 닮은 사랑<br/>밤낚시<br/>가파도의 뒷모습<br/>몇몇 단어<br/>건빵<br/><br/>
+
+                                    <b>Part 3 도착지는 어른이 아니라 그저 나</b><br/><br/>뒷모습<br/>매일 밤 편지를 씁니다<br/>히말라야, 생(生)을 찾다<br/>
+                                    오빠의 보물 상자<br/>신정동 패밀리<br/>영원한 나의 숙제<br/>사랑의 흔적<br/>요가라는 종교<br/>서른의 감정<br/><br/>Interview
+                                </div>
+                                <div id="tocMoreBtn" class="moreBtn"><span class="moreBtnTxt">펼쳐보기</span><em class="bgYUI ico_arr"></em></div>
+                            </div>
+                        </div>
+                        <div id="bInfoDimg" class="bInformation">
+                            <h4>상세 이미지</h4>
+                            <div class="bInfoDimgContWrap">
+                                <div class="bInfoDimgCont cont">
+                                    <img src="img/sub/bookDetail.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bInfoAuth" class="bInformation">
+                            <h4>저자 소개<span>(1명)</span></h4>
+
+                        </div>
+                        <div id="bInfoCmt" class="bInformation">
+                            <h4>만든 이 코멘트</h4>
+
+                        </div>
+                        <div id="bInfoInBook" class="bInformation">
+                            <h4>책 속으로</h4>
+
+                        </div>
+                        <div id="bInfoPubRv" class="bInformation">
+                            <h4>출판사 리뷰</h4>
+
+                        </div>
+                        <div id="bInfoRv" class="bInformation">
+                            <h4>회원리뷰<span>(0건)</span></h4>
+
+                        </div>
+                        <div id="bInfoRvCm" class="bInformation">
+                            <h4>한줄평<span>(2건)</span></h4>
+
+                        </div>
+                        <div id="bInfoCateBook" class="bInformation">
+
+                        </div>
+                        <div id="bInfoDilivery" class="bInformation">
+                            <h4>배송/반품/교환 안내</h4>
+
+                        </div>
+                    </div>
+                    <div id="bDetailBtmRight">
+
+                    </div>
+                </div>
             </div>
 
             <footer>
