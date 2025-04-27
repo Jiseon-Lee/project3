@@ -1102,7 +1102,7 @@ a.buyNow {
 
 #bDetailBtmLeft table th {
     width: 170px;
-    padding: 12px;
+    padding: 12px 0;
     font-size: 13px;
     line-height: 16px;
     text-align: center;
@@ -1110,6 +1110,7 @@ a.buyNow {
     border-top: 1px solid #ebebeb;
     border-right: 1px solid #ebebeb;
     background-color: #f8f8f8;
+    vertical-align: middle;
 }
 
 #bDetailBtmLeft table tr:first-child th {
@@ -1380,6 +1381,39 @@ a.buyNow {
     background: url("../img/sub/mask_corp.png") repeat-x center top;
 }
 
+#bInfoDilivery h5 {
+    margin-top: 23px;
+    margin-bottom: 9px;
+    color: #6699cc;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#bInfoDilivery h5:first-child {
+    margin-top: -7px;
+}
+
+#bInfoDilivery p {
+    margin-bottom: 5px;
+}
+
+.diliImg {
+    margin-top: 10px;
+    font-size: 0;
+    width: 740x;
+}
+
+.diliImg img {
+    display: inline-block;
+    width: 175px;
+    margin-right: 10px;
+}
+
+.bInfoDiliTb li {
+    line-height: 18px;
+}
 
 
 
